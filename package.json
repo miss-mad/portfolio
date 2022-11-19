@@ -1,0 +1,25 @@
+{
+  "name": "miss-mad-portfolio-take-two",
+  "version": "1.0.0",
+  "description": "This upgraded portfolio implements React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miss-mad/miss-mad-portfolio-take-two.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miss-mad/miss-mad-portfolio-take-two/issues"
+  },
+  "homepage": "http://miss-mad.github.io/miss-mad-portfolio-take-two",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
