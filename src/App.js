@@ -1,7 +1,9 @@
 import React from "react";
+import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
-  return null;
+  // placing the code following "return" inside () lets us enter to a new line and format the code more nicely
+  return <PortfolioContainer />;
   // (
   //   <div className="App">
   //     <header className="App-header">
