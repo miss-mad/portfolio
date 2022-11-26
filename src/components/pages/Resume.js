@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function Resume() {
-    return (
-        
-    )
+  return (
+    <div>
+      This is Resume
+      <h3>Resume</h3>
+    </div>
+  );
 }

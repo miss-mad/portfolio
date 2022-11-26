@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export default function AboutMe() {
-    return (
-        
-    )
+  return (
+    <div>
+      This is About Me
+      <h3>About Me</h3>
+      <p>etc etc etc</p>
+    </div>
+  );
 }
