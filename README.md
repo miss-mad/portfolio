@@ -34,7 +34,7 @@ Below are screenshots of my portfolio website.
 
 List of resources used:
 
-
+https://www.youtube.com/watch?v=hQAHSlTtcmY&t=1s&ab_channel=WebDevSimplified
 
 ## License
 
