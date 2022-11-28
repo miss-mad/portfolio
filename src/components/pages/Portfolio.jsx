@@ -1,15 +1,15 @@
 import React from "react";
+import Project from "../Project";
+import projectData from "../projectData";
 
 // need 6 projects, their titles, links to github and deployed apps
 
-export default function Portfolio() {
+export default function Portfolio({ projects }) {
   return (
     <section className="container projects" id="projects">
       This is Portfolio
-      {/* <h3>Portfolio</h3> */}
-      {/* <section id="projects" className="projects"> */}
       <h2>Portfolio Projects</h2>
-      <div className="row-1">
+      {/* <div className="row-1">
         <div className="card">
           <div className="project-title-1">
             <h4>MTHSY Music!</h4>
@@ -130,8 +130,16 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-      </div>
-      {/* </section> */}
+      </div> */}
+      {projectData.map((project) => {
+        return (
+          <Project
+            name={project.name}
+            linkDeployedApp={project.linkDeployedApp}
+            linkGithubRepo={project.linkGithubRepo}
+          />
+        );
+      })}
     </section>
   );
 }
