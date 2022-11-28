@@ -1,13 +1,14 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+
 // placed photo in the public folder at first, but wouldn't let me import files outside of the src folder (?)
-import headshotPhoto from "../../harris_headshot.jpg"
+import headshotPhoto from "../assets/harris_headshot.jpg";
 
 // need photo and short bio
 
 export default function AboutMe() {
   return (
-    <div className="container">
+    <section className="container">
       This is About Me
       <h3>About Me</h3>
       <p>
@@ -21,16 +22,16 @@ export default function AboutMe() {
       <figure>
         <p>Photo here</p>
         <img
-            // src="%PUBLIC_URL%/harris_headshot.jpg"
-            src={headshotPhoto}
-            alt="Headshot of Madeleine Harris"
-            height={200}
-            className="resize"
-          />
+          // src="%PUBLIC_URL%/harris_headshot.jpg"
+          src={headshotPhoto}
+          alt="Headshot of Madeleine Harris"
+          height="200"
+          className="resize"
+        />
         {/* <Link to="/public/harris_headshot.jpg">
           <img src="/public/harris_headshot.jpg" alt="headshot" />
         </Link> */}
       </figure>
-    </div>
+    </section>
   );
 }
