@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
@@ -32,12 +33,23 @@ function App() {
   // placing the code following "return" inside () lets us enter to a new line and format the code more nicely
   return (
     <div>
-      <Header
+      {/* <Router> */}
+        <Header
         currentPage={currentPage}
         handleNavBarChange={handleNavBarChange}
-      />
-      <MainContent content={renderPage()} />
-      <Footer />
+        />
+        {/* <div className="container"> */}
+           <MainContent content={renderPage()} />
+          {/*<MainContent />
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </div> */}
+        <Footer />
+      {/* </Router> */}
     </div>
   );
 }
