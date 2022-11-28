@@ -36,6 +36,14 @@ List of resources used:
 
 https://www.youtube.com/watch?v=hQAHSlTtcmY&t=1s&ab_channel=WebDevSimplified
 
+https://www.taniarascia.com/getting-started-with-react/
+
+https://reactjs.org/docs/hello-world.html
+
+https://codingbeautydev.com/blog/react-link-image/#:~:text=To%20link%20a%20local%20image,prop%20of%20an%20img%20element.&text=Linking%20and%20displaying%20an%20image,tool%20like%20Create%20React%20App.
+
+https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/
+
 ## License
 
 No licenses.
