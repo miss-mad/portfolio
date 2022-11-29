@@ -3,7 +3,7 @@ import React from "react";
 export default function NavBar({ currentPage, handleNavBarChange }) {
   return (
     <nav className="container">
-      This is NavBar
+      {/* This is NavBar */}
       <ul className="nav nav-pills">
         <li>
           <a

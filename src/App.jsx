@@ -11,6 +11,9 @@ import Portfolio from "./components/pages/Portfolio";
 import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 
+// import TEST from "./components/pages/TEST";
+
+
 function App() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
 
@@ -25,6 +28,7 @@ function App() {
       return <Portfolio />;
     }
     if (currentPage === "Contact") {
+      // return <TEST />;
       return <Contact />;
     }
     return <Resume />;
@@ -34,13 +38,13 @@ function App() {
   return (
     <div>
       {/* <Router> */}
-        <Header
+      <Header
         currentPage={currentPage}
         handleNavBarChange={handleNavBarChange}
-        />
-        {/* <div className="container"> */}
-           <MainContent content={renderPage()} />
-          {/*<MainContent />
+      />
+      {/* <div className="container"> */}
+      <MainContent content={renderPage()} />
+      {/*<MainContent />
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
@@ -48,7 +52,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </div> */}
-        <Footer />
+      <Footer />
       {/* </Router> */}
     </div>
   );

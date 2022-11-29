@@ -6,7 +6,7 @@ export default function Project({ name, linkDeployedApp, linkGithubRepo }) {
       <div className="row">
         <div className="card">
           <div className="project-title-1">
-            <div>This is the reusable Project component</div>
+            {/* <div>This is the reusable Project component</div> */}
             <h3>{name}</h3>
             <button className="btn">
               <a

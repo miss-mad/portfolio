@@ -7,7 +7,7 @@ import projectData from "../projectData";
 export default function Portfolio({ projects }) {
   return (
     <section className="container projects" id="projects">
-      This is Portfolio
+      {/* This is Portfolio */}
       <h2>Portfolio Projects</h2>
       {/* <div className="row-1">
         <div className="card">

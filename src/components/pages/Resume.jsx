@@ -7,7 +7,7 @@ import resume from "../assets/Resume.pdf"
 export default function Resume() {
   return (
     <section className="container">
-      This is Resume
+      {/* This is Resume */}
       <h3>Resume</h3>
       {/* <p>Downloadable resume here</p> */}
       <a
