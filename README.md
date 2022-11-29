@@ -12,11 +12,11 @@ This upgraded portfolio implements React
 
 ## Description
 
-This new professional portfolio serves as a the central location for all current projects. Read about who I am, glimpse my work, and contact me all within a concise and efficient layout using React and _____. With links to other professional sources like LinkedIn and Github, you can explore the scope of my capacity as a budding developer.
+This new professional portfolio serves as a the central location for all current projects. Read about who I am, glimpse my work, and contact me all within a concise and efficient layout using React. With links to other professional sources like LinkedIn and Github, you can explore my capacity as a developer.
 
 ## Deployed Application
 
-
+https://miss-mad.github.io/miss-mad-portfolio-take-two/
 
 ## Installation
 
@@ -26,9 +26,7 @@ No installation necessary.
 
 Below are screenshots of my portfolio website.
 
-![React Portfolio screenshot 1]()
-![React Portfolio screenshot 2]()
-![React Portfolio screenshot 3]()
+![React Portfolio screenshot 1](./src/components/assets/react_portfolio_screenshot1.JPG)
 
 ## Credits
 
@@ -43,6 +41,8 @@ https://reactjs.org/docs/hello-world.html
 https://codingbeautydev.com/blog/react-link-image/#:~:text=To%20link%20a%20local%20image,prop%20of%20an%20img%20element.&text=Linking%20and%20displaying%20an%20image,tool%20like%20Create%20React%20App.
 
 https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/
+
+https://react-hook-form.com/get-started
 
 ## License
 
