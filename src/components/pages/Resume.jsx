@@ -1,38 +1,14 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import resume from "../assets/Resume.pdf"
-// need link to downloadable resume
-// need list of proficiencies
+import resume from "../assets/Resume.pdf";
 
 export default function Resume() {
   return (
     <section className="container">
-      {/* This is Resume */}
       <h3>Resume</h3>
-      {/* <p>Downloadable resume here</p> */}
-      <a
-        href={resume}
-        target="_blank"
-        rel="noopener noreferrer"
-        download
-      >
+      <a href={resume} target="_blank" rel="noopener noreferrer" download>
         Downloadable resume here
       </a>
-      {/* <Link
-        className=""
-        to="https://drive.google.com/file/d/1dA1UU2h6Gl-rsotuMOvQ9f1aiEpLsuFv/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-        download
-      >
-        Downloadable resume here
-      </Link> */}
-      {/* <a
-        href="https://drive.google.com/file/d/1dA1UU2h6Gl-rsotuMOvQ9f1aiEpLsuFv/view?usp=sharing"
-        download="newfilename"
-      >
-        Downloadable resume here
-      </a> */}
+
       <p>List of Proficiencies</p>
       <ul>
         <li>Git</li>

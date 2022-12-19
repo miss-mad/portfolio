@@ -44,6 +44,12 @@ https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/
 
 https://react-hook-form.com/get-started
 
+https://codesandbox.io/s/react-hook-form-validation-onblur-forked-bxr9kf?file=/src/index.js:1148-1153
+
+https://coolors.co/faebd7-dcbf85-b2675e-3e5c76-e0ffff
+
+https://www.w3schools.com/react/react_router.asp
+
 ## License
 
 No licenses.

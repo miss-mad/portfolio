@@ -2,8 +2,6 @@ import React from "react";
 import Project from "../Project";
 import projectData from "../projectData";
 
-// need 6 projects, their titles, links to github and deployed apps
-
 export default function Portfolio() {
   return (
     <section className="container projects" id="projects">
