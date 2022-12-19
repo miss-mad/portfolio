@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/miss-mad-portfolio-take-two/static/css/main.6d03300d.css",
-    "main.js": "/miss-mad-portfolio-take-two/static/js/main.396dcbbd.js",
+    "main.css": "/miss-mad-portfolio-take-two/static/css/main.bc0b1d03.css",
+    "main.js": "/miss-mad-portfolio-take-two/static/js/main.3ed3709a.js",
     "static/media/harris_headshot.jpg": "/miss-mad-portfolio-take-two/static/media/harris_headshot.72184a054a43605e7e6e.jpg",
     "static/media/Harris_Resume.pdf": "/miss-mad-portfolio-take-two/static/media/Harris_Resume.b398574e085813ca2abe.pdf",
     "index.html": "/miss-mad-portfolio-take-two/index.html",
-    "main.6d03300d.css.map": "/miss-mad-portfolio-take-two/static/css/main.6d03300d.css.map",
-    "main.396dcbbd.js.map": "/miss-mad-portfolio-take-two/static/js/main.396dcbbd.js.map"
+    "main.bc0b1d03.css.map": "/miss-mad-portfolio-take-two/static/css/main.bc0b1d03.css.map",
+    "main.3ed3709a.js.map": "/miss-mad-portfolio-take-two/static/js/main.3ed3709a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d03300d.css",
-    "static/js/main.396dcbbd.js"
+    "static/css/main.bc0b1d03.css",
+    "static/js/main.3ed3709a.js"
   ]
 }
