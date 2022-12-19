@@ -1,7 +1,29 @@
 import React from "react";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/Harris_Resume.pdf";
+// import { listOfProficiencies as proficiencies } from "../listofProficiencies";
 
 export default function Resume() {
+  const listOfProficiencies = [
+    { id: 1, name: "Git" },
+    { id: 2, name: "HTML5" },
+    { id: 3, name: "CSS3" },
+    { id: 4, name: "JavaScript" },
+    { id: 5, name: "SQL" },
+    { id: 6, name: "NoSQL" },
+    { id: 7, name: "GraphQL" },
+    { id: 8, name: "CSS Frameworks" },
+    { id: 9, name: "MySQL" },
+    { id: 10, name: "Apollo" },
+    { id: 11, name: "jQuery" },
+    { id: 12, name: "Sequelize" },
+    { id: 13, name: "MongoDB and Mongoose" },
+    { id: 14, name: "React" },
+    { id: 15, name: "Mobile-First Design" },
+    { id: 16, name: "APIs - client, third party and server-side" },
+    { id: 17, name: "Agile Methodology" },
+    { id: 18, name: "Github and Heroku Deployment" },
+  ];
+
   return (
     <section className="container">
       <h3>Resume</h3>
@@ -10,26 +32,14 @@ export default function Resume() {
       </a>
 
       <p>List of Proficiencies</p>
-      <ul>
-        <li>Git</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>NoSQL</li>
-        <li>GraphQL</li>
-        <li>CSS Frameworks</li>
-        <li>MySQL</li>
-        <li>Apollo</li>
-        <li>jQuery</li>
-        <li>Sequelize</li>
-        <li>MongoDB and Mongoose</li>
-        <li>React</li>
-        <li>Mobile-First Design</li>
-        <li>APIs - client, third party and server-side</li>
-        <li>Agile Methodology</li>
-        <li>Github and Heroku Deployment</li>
-      </ul>
+
+      {listOfProficiencies.map((proficiency) => {
+        return (
+          <ul>
+            <li>{proficiency.id}</li>
+          </ul>
+        );
+      })}
     </section>
   );
 }
