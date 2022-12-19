@@ -16,6 +16,8 @@ import { useForm } from "react-hook-form";
 //   },
 // };
 
+// UPDATE WITH REACT FORM ACTIVITY [module 20, activities 15-16]
+
 export default function Contact() {
   const { register, errors, handleSubmit } = useForm({ mode: "onBlur" });
   const onSubmit = (data) => {

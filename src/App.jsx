@@ -14,7 +14,7 @@ export default function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/miss-mad-portfolio-take-two/" element={<AboutMe />} />
+          <Route path="/" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
