@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/miss-mad-portfolio-take-two/static/css/main.6d03300d.css",
-    "main.js": "/miss-mad-portfolio-take-two/static/js/main.085b66e0.js",
+    "main.js": "/miss-mad-portfolio-take-two/static/js/main.396dcbbd.js",
     "static/media/harris_headshot.jpg": "/miss-mad-portfolio-take-two/static/media/harris_headshot.72184a054a43605e7e6e.jpg",
     "static/media/Harris_Resume.pdf": "/miss-mad-portfolio-take-two/static/media/Harris_Resume.b398574e085813ca2abe.pdf",
     "index.html": "/miss-mad-portfolio-take-two/index.html",
     "main.6d03300d.css.map": "/miss-mad-portfolio-take-two/static/css/main.6d03300d.css.map",
-    "main.085b66e0.js.map": "/miss-mad-portfolio-take-two/static/js/main.085b66e0.js.map"
+    "main.396dcbbd.js.map": "/miss-mad-portfolio-take-two/static/js/main.396dcbbd.js.map"
   },
   "entrypoints": [
     "static/css/main.6d03300d.css",
-    "static/js/main.085b66e0.js"
+    "static/js/main.396dcbbd.js"
   ]
 }
