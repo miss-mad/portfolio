@@ -122,10 +122,7 @@ a:visited:hover {
 }
 
 a[href*="miss-mad."] {
-  color: #1b7a8e;
-  font-size: 24px;
   text-decoration: none;
-  position: relative;
   bottom: 100px;
 }
 

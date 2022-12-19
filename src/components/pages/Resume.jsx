@@ -36,7 +36,7 @@ export default function Resume() {
       {listOfProficiencies.map((proficiency) => {
         return (
           <ul>
-            <li>{proficiency.id}</li>
+            <li>{proficiency.name}</li>
           </ul>
         );
       })}
