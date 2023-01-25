@@ -1,8 +1,8 @@
 {
-  "name": "miss-mad-portfolio-take-two",
+  "name": "miss-mad-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://miss-mad.github.io/miss-mad-portfolio-take-two",
+  "homepage": "http://miss-mad.github.io/miss-mad-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
