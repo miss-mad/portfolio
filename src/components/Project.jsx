@@ -1,8 +1,21 @@
 import React from "react";
 
-export default function Project({ name, linkDeployedApp, linkGithubRepo }) {
+export default function Project({
+  name,
+  index,
+  key,
+  className,
+  linkGithubRepo,
+  linkDeployedApp,
+  backgroundImage,
+  handleClick,
+}) {
   return (
-    <section className="container">
+    <section
+      className={`container project-card ${className}`}
+      style={{ backgroundImage: backgroundImage }}
+      onClick={handleClick}
+    >
       <div className="row">
         <h3>{name}</h3>
 
