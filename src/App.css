@@ -49,13 +49,7 @@
   }
 }
 
-/* ______________________ */
-
-/*CSS Variables*/
-:root {
-  --white: antiquewhite;
-  --blue: lightcyan;
-}
+/* ______________________ need to clean up from old portfolio */
 
 /*Element selectors*/
 body {
@@ -175,6 +169,31 @@ button {
 .projects {
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.project0,
+.project1,
+.project2,
+.project3,
+.project4,
+.project5 {
+  /* background: #6b0f9c; */
+  /* box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1); */
+  color: white;
+  text-align: center;
+  align-items: center;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   flex-direction: column;
 }
 
@@ -187,16 +206,6 @@ button {
   filter: brightness(0.75);
 }
 
-/* .project-title-1 {
-  background: url(../images/mthsy_music_final_screenshot1.JPG);
-  height: 400px;
-}
-
-.project-title-2 {
-  background: url(../images/whos_app_screenshot4.JPG);
-  height: 400px;
-} */
-
 .row-2 {
   width: 100%;
   margin: 8px 0 0 0;
@@ -204,15 +213,7 @@ button {
   justify-content: space-evenly;
 }
 
-/* .project-title-3 {
-  background: url(../images/weather_dashboard_2.JPG);
-}
-
-.project-title-4 {
-  background: url(../images/work-day-scheduler_screenshot.png);
-} */
-
-.project-title-2,
+/* .project-title-2,
 .project-title-3 {
   width: 300px;
   height: 300px;
@@ -228,7 +229,7 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 2;
-}
+} */
 
 .form-row {
   justify-content: space-evenly;
@@ -307,4 +308,3 @@ button {
     height: 200px;
   }
 }
-
