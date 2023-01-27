@@ -91,6 +91,16 @@ h1.logo {
   margin-left: 0;
 }
 
+.container-no-flex {
+  padding: 24px;
+  height: 100vh;
+  background-color: lightsteelblue;
+  border: 1px solid red;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* portfolio section */
 .projects {
   display: flex;
@@ -120,6 +130,6 @@ h1.logo {
 }
 
 /* resume section */
-.proficiency-list {
-  font-size: 10px;
+.resume-headers {
+  text-align: center;
 }

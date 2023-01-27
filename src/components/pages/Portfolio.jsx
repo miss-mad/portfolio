@@ -44,7 +44,7 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="container projects" id="projects">
+    <section className="container-no-flex projects" id="projects">
       {projectData.map((project, index) => {
         return (
           <Project

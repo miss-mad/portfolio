@@ -1,9 +1,9 @@
-import React from "react";
-import headshotPhoto from "../assets/harris_headshot.jpg";
+import React from "react"
+import headshotPhoto from "../assets/harris_headshot.jpg"
 
 export default function AboutMe() {
   return (
-    <section className="container">
+    <section className="container-no-flex">
       <h3>About Me</h3>
       <p>
         Self-motivated full stack web developer with a unique and varied
@@ -23,5 +23,5 @@ export default function AboutMe() {
         />
       </figure>
     </section>
-  );
+  )
 }
