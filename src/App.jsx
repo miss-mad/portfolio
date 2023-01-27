@@ -8,15 +8,17 @@ import Portfolio from "./components/pages/Portfolio"
 import Contact from "./components/pages/Contact"
 import Resume from "./components/pages/Resume"
 
-const { Content } = Layout
+const { Content, Sider } = Layout
 
 export default function App() {
   return (
-    <Layout>
-      <Router>
-        <Sidebar />
+    <Router>
+      <Layout hasSider={true} style={{ height: "100%" }}>
+        <Sider>
+          <Sidebar />
+        </Sider>
         <Layout>
-          <Content>
+          <Content style={{ width: "100%" }}>
             <Routes>
               <Route path="/about-me" element={<AboutMe />} />
               <Route path="/portfolio" element={<Portfolio />} />
@@ -25,7 +27,7 @@ export default function App() {
             </Routes>
           </Content>
         </Layout>
-      </Router>
-    </Layout>
+      </Layout>
+    </Router>
   )
 }

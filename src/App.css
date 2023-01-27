@@ -60,6 +60,7 @@ button {
 .side-nav {
   background-color: #001529;
   border: 1px solid red;
+  min-height: 100vh;
 }
 
 /* App.jsx element styling */
