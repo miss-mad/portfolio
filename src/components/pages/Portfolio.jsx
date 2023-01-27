@@ -44,40 +44,21 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="container-no-flex projects" id="projects">
-      {projectData.map((project, index) => {
-        return (
-          <Project
-            className={`project${index}`}
-            key={project.id}
-            name={project.name}
-            linkGithubRepo={project.linkGithubRepo}
-            linkDeployedApp={project.linkDeployedApp}
-            backgroundImage={project.backgroundImage}
-          />
-        )
-      })}
-
-      {/* <Project
-        className={`project${0} ${showProject1 && "open"}`}
-        handleClick={handleClick}
-        shouldAnimate={showProject1}
-        key={projectData[0].id}
-        name={projectData[0].name}
-        linkGithubRepo={projectData[0].linkGithubRepo}
-        linkDeployedApp={projectData[0].linkDeployedApp}
-        backgroundImage={projectData[0].backgroundImage}
-      />
-      <Project
-        className={`project${1} ${showProject2 && "open"}`}
-        handleClick={handleClick}
-        shouldAnimate={showProject2}
-        key={projectData[1].id}
-        name={projectData[1].name}
-        linkGithubRepo={projectData[1].linkGithubRepo}
-        linkDeployedApp={projectData[1].linkDeployedApp}
-        backgroundImage={projectData[1].backgroundImage}
-      /> */}
+    <section className="container-no-flex">
+      <div className="container-no-flex">
+        {projectData.map((project, index) => {
+          return (
+            <Project
+              className={`project${index}`}
+              key={project.id}
+              name={project.name}
+              linkGithubRepo={project.linkGithubRepo}
+              linkDeployedApp={project.linkDeployedApp}
+              backgroundImage={project.backgroundImage}
+            />
+          )
+        })}
+      </div>
     </section>
   )
 }
