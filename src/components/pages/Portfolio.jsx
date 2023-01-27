@@ -1,35 +1,17 @@
-import React, { useEffect, useState } from "react";
-import Project from "../Project";
-// import projectData from "../projectData";
+import React, { useEffect, useState } from "react"
+import Project from "../Project"
+import projectData from "../projectData"
 
-const projectData = [
-  {
-    id: 0,
-    name: "ResuMade",
-    linkDeployedApp: "https://resumade.herokuapp.com/",
-    linkGithubRepo: "https://github.com/PeytonCast/ResuMade",
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1446038236174-69712e24d137?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG9jZWFufGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=800&q=60')",
-  },
-  {
-    id: 1,
-    name: "Who's App",
-    linkDeployedApp: "https://whooooos-app.herokuapp.com",
-    linkGithubRepo: "https://github.com/miss-mad/Whos-App",
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWR2ZW50dXJlfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=800&q=60')",
-  },
-];
 export default function Portfolio() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState([])
 
-  const [showProject1, setShowProject1] = useState(false);
-  const [showProject2, setShowProject2] = useState(false);
+  const [showProject1, setShowProject1] = useState(false)
+  const [showProject2, setShowProject2] = useState(false)
 
   useEffect(() => {
-    const html_collection = document.getElementsByClassName("project-card");
-    setProjects([...html_collection]);
-  }, []);
+    const html_collection = document.getElementsByClassName("project-card")
+    setProjects([...html_collection])
+  }, [])
 
   // const toggleOpen = (e) => {
   //   console.log(e);
@@ -58,26 +40,25 @@ export default function Portfolio() {
   // }, [projects]);
 
   const handleClick = (e) => {
-    console.log(e.target.section);
-  };
+    console.log(e.target.section)
+  }
 
   return (
     <section className="container projects" id="projects">
-      {/* {projectData.map((project, index) => {
+      {projectData.map((project, index) => {
         return (
           <Project
             className={`project${index}`}
-            shouldAnimate={}
             key={project.id}
             name={project.name}
             linkGithubRepo={project.linkGithubRepo}
             linkDeployedApp={project.linkDeployedApp}
             backgroundImage={project.backgroundImage}
           />
-        );
-      })} */}
+        )
+      })}
 
-      <Project
+      {/* <Project
         className={`project${0} ${showProject1 && "open"}`}
         handleClick={handleClick}
         shouldAnimate={showProject1}
@@ -96,7 +77,7 @@ export default function Portfolio() {
         linkGithubRepo={projectData[1].linkGithubRepo}
         linkDeployedApp={projectData[1].linkDeployedApp}
         backgroundImage={projectData[1].backgroundImage}
-      />
+      /> */}
     </section>
-  );
+  )
 }
