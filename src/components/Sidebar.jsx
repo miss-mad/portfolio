@@ -1,17 +1,17 @@
 import {
+  MailOutlined,
+  GithubOutlined,
   CoffeeOutlined,
   CommentOutlined,
-  FolderOpenOutlined,
-  GithubOutlined,
-  LinkedinOutlined,
-  MailOutlined,
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
   ProfileOutlined,
+  LinkedinOutlined,
+  MenuFoldOutlined,
+  FolderOpenOutlined,
+  MenuUnfoldOutlined,
 } from "@ant-design/icons"
 
 import React, { useState } from "react"
-import { Layout, Menu, Button } from "antd"
+import { Affix, Button, Menu, Layout } from "antd"
 import { useNavigate } from "react-router-dom"
 
 const { Sider } = Layout
@@ -19,17 +19,13 @@ const { Sider } = Layout
 export default function Sidebar() {
   const navigate = useNavigate()
   const [collapsed, setCollapsed] = useState(false)
+  const [sidebarSticky, setsidebarSticky] = useState()
 
   const handleNavBarChange = ({ key }) => {
     navigate(key)
   }
 
   const navBarItems = [
-    // {
-    //   label: "Home",
-    //   key: "/",
-    //   icon: <HomeOutlined />,
-    // },
     {
       label: "AboutMe",
       key: "/about-me",
@@ -41,11 +37,6 @@ export default function Sidebar() {
       key: "/portfolio",
       icon: <FolderOpenOutlined />,
     },
-    // {
-    //   label: "PortfolioC",
-    //   key: "/portfolio-carousel",
-    //   icon: <FolderOpenOutlined />,
-    // },
     {
       label: "Contact",
       key: "/contact",
@@ -58,7 +49,7 @@ export default function Sidebar() {
     },
   ]
 
-  const iconLinks = [
+  const socialLinks = [
     {
       label: <a href="mailto:mmlh.harris@gmail.com">Email</a>,
       key: "email",
@@ -91,46 +82,39 @@ export default function Sidebar() {
       icon: <LinkedinOutlined />,
     },
   ]
-  {
-    /* <MenuOutlined /> */
-    // style={{ lineHeight: "4px" }}
-  }
 
   return (
-    <Sider
-      style={{ height: "100vh" }}
-      trigger={null}
-      collapsible
-      collapsed={collapsed}
-    >
-      <div>
-        <div className="side-nav">
-          {collapsed ? (
-            <h1 className="logo">H</h1>
-          ) : (
-            <h1 className="logo">Harris</h1>
-          )}
-          <nav className="nav-items">
-            <Menu
-              theme="dark"
-              mode="inline"
-              items={navBarItems}
-              onClick={handleNavBarChange}
-              defaultSelectedKeys={"/about-me"}
-            />
-            <Menu items={iconLinks} />
-          </nav>
-        </div>
-        <Button>
-          {React.createElement(
-            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: () => setCollapsed(!collapsed),
-            }
-          )}
-        </Button>
-      </div>
-    </Sider>
+    <>
+      <Affix>
+        <Sider trigger={null} collapsible collapsed={collapsed}>
+          <div className="side-nav">
+            <Button className="siderButton">
+              {React.createElement(
+                collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+                {
+                  className: "trigger",
+                  onClick: () => setCollapsed(!collapsed),
+                }
+              )}
+            </Button>
+            {collapsed ? (
+              <h1 className="logo">H</h1>
+            ) : (
+              <h1 className="logo">Harris</h1>
+            )}
+            <nav className="nav-items">
+              <Menu
+                theme="dark"
+                mode="inline"
+                items={navBarItems}
+                onClick={handleNavBarChange}
+                defaultSelectedKeys={"/about-me"}
+              />
+              <Menu mode="inline" items={socialLinks} />
+            </nav>
+          </div>
+        </Sider>
+      </Affix>
+    </>
   )
 }

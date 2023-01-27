@@ -1,5 +1,5 @@
-import React from "react";
-import resume from "../assets/Harris_Resume.pdf";
+import React from "react"
+import resume from "../assets/Harris_Resume.pdf"
 // import { listOfProficiencies as proficiencies } from "../listofProficiencies";
 
 export default function Resume() {
@@ -22,7 +22,7 @@ export default function Resume() {
     { id: 16, name: "APIs - client, third party and server-side" },
     { id: 17, name: "Agile Methodology" },
     { id: 18, name: "Github and Heroku Deployment" },
-  ];
+  ]
 
   return (
     <section className="container">
@@ -35,11 +35,11 @@ export default function Resume() {
 
       {listOfProficiencies.map((proficiency) => {
         return (
-          <ul>
+          <ul className="proficiency-list">
             <li>{proficiency.name}</li>
           </ul>
-        );
+        )
       })}
     </section>
-  );
+  )
 }

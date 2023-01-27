@@ -22,9 +22,9 @@ const projectData = [
     name: "MTHSY Music!",
     linkDeployedApp: "https://miss-mad.github.io/mthsy-music",
     linkGithubRepo: "https://github.com/miss-mad/mthsy-music",
-    // backgroundImage:
-    //   "url('https://images.unsplash.com/photo-1595960684234-49d2a004e753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGFkdmVudHVyZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=800&q=60')",
-    backgroundImage: "url('')",
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1595960684234-49d2a004e753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGFkdmVudHVyZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=800&q=60')",
+    // backgroundImage: "url('')",
   },
   {
     id: 3,
@@ -58,6 +58,6 @@ const projectData = [
   //   linkDeployedApp: "https://confer-the-code.herokuapp.com",
   //   linkGithubRepo: "https://github.com/miss-mad/confer-the-code",
   // },
-];
+]
 
-export default projectData;
+export default projectData
