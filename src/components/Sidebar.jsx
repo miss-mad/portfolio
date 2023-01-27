@@ -19,10 +19,13 @@ const { Sider } = Layout
 export default function Sidebar() {
   const navigate = useNavigate()
   const [collapsed, setCollapsed] = useState(false)
-  const [sidebarSticky, setsidebarSticky] = useState()
 
   const handleNavBarChange = ({ key }) => {
     navigate(key)
+  }
+
+  const onButtonClick = () => {
+    setCollapsed(!collapsed)
   }
 
   const navBarItems = [
@@ -84,37 +87,37 @@ export default function Sidebar() {
   ]
 
   return (
-    <>
-      <Affix>
-        <Sider trigger={null} collapsible collapsed={collapsed}>
-          <div className="side-nav">
-            <Button className="siderButton">
-              {React.createElement(
-                collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-                {
-                  className: "trigger",
-                  onClick: () => setCollapsed(!collapsed),
-                }
-              )}
-            </Button>
-            {collapsed ? (
-              <h1 className="logo">H</h1>
-            ) : (
-              <h1 className="logo">Harris</h1>
+    <Affix>
+      <Sider trigger={null} collapsible collapsed={collapsed} className="sider">
+        <div className="side-nav">
+          <Button className="sider-button" onClick={onButtonClick}>
+            {React.createElement(
+              collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+              {
+                className: "trigger",
+              }
             )}
-            <nav className="nav-items">
-              <Menu
-                theme="dark"
-                mode="inline"
-                items={navBarItems}
-                onClick={handleNavBarChange}
-                defaultSelectedKeys={"/about-me"}
-              />
-              <Menu mode="inline" items={socialLinks} />
-            </nav>
-          </div>
-        </Sider>
-      </Affix>
-    </>
+          </Button>
+          {collapsed ? (
+            <h1 className="logo">H{/* <a href="#about-me">H</a> */}</h1>
+          ) : (
+            <h1 className="logo">
+              Harris
+              {/* <a href="#about-me">Harris</a> */}
+            </h1>
+          )}
+          <nav>
+            <Menu
+              theme="dark"
+              mode="inline"
+              items={navBarItems}
+              onClick={handleNavBarChange}
+              defaultSelectedKeys={"/about-me"}
+            />
+            <Menu mode="inline" items={socialLinks} />
+          </nav>
+        </div>
+      </Sider>
+    </Affix>
   )
 }

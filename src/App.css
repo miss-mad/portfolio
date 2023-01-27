@@ -1,3 +1,4 @@
+/* UNIVERSAL STYLING */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   /* height: 100%; */
 }
 
+/* CSS ROOT VARIABLES */
 :root {
   --iceberg: #79addcff;
   --gold-crayola: #dcbf85ff;
@@ -15,6 +17,7 @@
   --original-blue: lightcyan;
 }
 
+/* GENERAL ELEMENT SELECTORS */
 html {
   height: 100%;
 }
@@ -36,7 +39,7 @@ img {
   height: auto;
 }
 
-/* link styling */
+/* LINK STYLING */
 a:link {
   text-decoration: none;
   color: var(--white);
@@ -54,27 +57,25 @@ a[href*="miss-mad."] {
 
 button {
   margin: 10px auto 50px auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
+/* SIDEBAR STYLING */
 .side-nav {
   background-color: #001529;
-  border: 1px solid red;
   min-height: 100vh;
+  /* border: 1px solid red; */
 }
 
-/* App.jsx element styling */
-
-/* Sidebar styling */
-
-.siderButton {
+.sider-button {
   display: block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 h1.logo {
   text-align: center;
   color: #ffffff;
+  /* border: 1px solid red; */
 }
 
 /* section containers (4) */
@@ -83,31 +84,31 @@ h1.logo {
   align-items: center;
   padding: 24px;
   flex-direction: column;
-  height: 100vh;
   background-color: lightsteelblue;
-  border: 1px solid red;
   width: 100%;
   margin-right: 0;
   margin-left: 0;
+  /* height: 100vh; */
+  /* border: 1px solid red; */
 }
 
 .container-no-flex {
   padding: 24px;
   height: 100vh;
   background-color: lightsteelblue;
-  border: 1px solid red;
   width: 100%;
   margin-right: 0;
   margin-left: 0;
+  /* border: 1px solid red; */
 }
 
-/* portfolio section */
+/* PORTFOLIO STYLING */
 .projects {
   display: flex;
   justify-content: center;
   height: 100%;
   overflow: hidden;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .project0,
@@ -126,10 +127,14 @@ h1.logo {
   align-items: center;
   justify-content: center;
   height: 300px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-/* resume section */
+/* RESUME STYLING */
 .resume-headers {
   text-align: center;
 }
+
+/* .card-widths {
+  width: 80%;
+} */

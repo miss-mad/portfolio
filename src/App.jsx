@@ -14,9 +14,7 @@ export default function App() {
   return (
     <Router>
       <Layout hasSider={true} style={{ height: "100%" }}>
-        <Sider>
-          <Sidebar />
-        </Sider>
+        <Sidebar />
         <Layout>
           <Content style={{ width: "100%" }}>
             <Routes>
