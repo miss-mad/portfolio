@@ -2,7 +2,7 @@
   "name": "miss-mad-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://miss-mad.github.io/portfolio/about-me",
+  "homepage": "http://miss-mad.github.io/portfolio/",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@emailjs/browser": "^3.10.0",
