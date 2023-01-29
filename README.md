@@ -1,57 +1,17 @@
-# Madeleine's Professional Portfolio Take Two: with React
-This upgraded portfolio implements React
+# Hi, I'm Madeleine. Welcome to my Portfolio!
 
-## Table of Contents
-
-- [Description](#description)
-- [Deployed Application](#deployed-application)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+View the portfolio now: https://miss-mad.github.io/portfolio/
 
 ## Description
 
-This new professional portfolio serves as a the central location for all current projects. Read about who I am, glimpse my work, and contact me all within a concise and efficient layout using React. With links to other professional sources like LinkedIn and Github, you can explore my capacity as a developer.
-
-## Deployed Application
-
-https://miss-mad.github.io/miss-mad-portfolio-take-two/
-
-## Installation
-
-No installation necessary.
+This is my professional portfolio that serves as the central location for all current projects. Created with enthusiasm using React and Ant Design.
 
 ## Usage
 
-Below are screenshots of my portfolio website.
-
-![React Portfolio screenshot 1](./src/components/assets/react_portfolio_screenshot1.JPG)
-
-## Credits
-
-List of resources used:
-
-https://www.youtube.com/watch?v=hQAHSlTtcmY&t=1s&ab_channel=WebDevSimplified
-
-https://www.taniarascia.com/getting-started-with-react/
-
-https://reactjs.org/docs/hello-world.html
-
-https://codingbeautydev.com/blog/react-link-image/#:~:text=To%20link%20a%20local%20image,prop%20of%20an%20img%20element.&text=Linking%20and%20displaying%20an%20image,tool%20like%20Create%20React%20App.
-
-https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/
-
-https://react-hook-form.com/get-started
-
-https://codesandbox.io/s/react-hook-form-validation-onblur-forked-bxr9kf?file=/src/index.js:1148-1153
-
-https://coolors.co/faebd7-dcbf85-b2675e-3e5c76-e0ffff
-
-https://www.w3schools.com/react/react_router.asp
+![React Portfolio screenshot 1](./src/components/assets/portfolio_screenshots/react_portfolio_screenshot4.png)
 
 ## License
 
-No licenses.
+None
 
 ---
