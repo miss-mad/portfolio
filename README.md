@@ -8,7 +8,7 @@ This is my professional portfolio that serves as the central location for all cu
 
 ## Usage
 
-![React Portfolio screenshot 1](./src/components/assets/portfolio_screenshots/react_portfolio_screenshot4.png)
+![React Portfolio screenshot 1](./src/components/assets/portfolio_screenshots/react_portfolio_screenshot5.png)
 
 ## License
 

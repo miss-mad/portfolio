@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import resume from "../assets/Harris_Resume.pdf"
-import { Card, Col, Collapse, List, Row } from "antd"
+import { Card, Collapse, List } from "antd"
 const { Meta } = Card
 const { Panel } = Collapse
 
@@ -60,7 +60,7 @@ export default function Resume() {
     },
   ]
 
-  const text = <h4>Downloadable resume here</h4>
+  const text = <h4>Download my resume here</h4>
 
   const link = (
     <a
@@ -69,7 +69,7 @@ export default function Resume() {
       target="_blank"
       rel="noopener noreferrer"
       download
-      style={{ fontSize: "32px", color: "purple" }}
+      style={{ fontSize: 24, color: "#001529" }}
     >
       Madeleine Harris Resume
     </a>
@@ -78,7 +78,7 @@ export default function Resume() {
   return (
     <section className="container-no-flex">
       <div className="resume-headers">
-        <h3>List of Proficiencies</h3>
+        <h3>Technical Skills</h3>
       </div>
 
       {cardData.map((cardData) => {
@@ -114,7 +114,11 @@ export default function Resume() {
         )
       })}
 
-      <Collapse collapsible="header" onChange={onChange}>
+      <Collapse
+        defaultActiveKey={[""]}
+        collapsible="header"
+        onChange={onChange}
+      >
         <Panel header={text} key="1">
           <p>{link}</p>
         </Panel>

@@ -4,7 +4,7 @@ import headshotPhoto from "../assets/harris_headshot.jpg"
 export default function AboutMe() {
   return (
     <section className="container-no-flex" id="about-me">
-      <div className="container">
+      <div className="container-flex">
         <h3>About Me</h3>
         <p>
           Hi, my name is Madeleine Harris. I am a self-motivated full stack web

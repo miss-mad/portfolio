@@ -1,5 +1,11 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import {
+  // redirect,
+  Navigate,
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom"
 import { Layout } from "antd"
 
 import Sidebar from "./components/Sidebar"
@@ -8,7 +14,7 @@ import Portfolio from "./components/pages/Portfolio"
 import Contact from "./components/pages/Contact"
 import Resume from "./components/pages/Resume"
 
-const { Content, Sider } = Layout
+const { Content } = Layout
 
 export default function App() {
   return (
@@ -20,8 +26,9 @@ export default function App() {
             <Routes>
               <Route path="/about-me" element={<AboutMe />} />
               <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Content>
         </Layout>
