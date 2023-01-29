@@ -12,7 +12,7 @@ import {
 
 import React, { useState } from "react"
 import { Affix, Button, Layout, Menu } from "antd"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const { Sider } = Layout
 
@@ -41,14 +41,14 @@ export default function Sidebar() {
       icon: <FolderOpenOutlined />,
     },
     {
-      label: "Contact",
-      key: "/contact",
-      icon: <CommentOutlined />,
-    },
-    {
       label: "Resume",
       key: "/resume",
       icon: <ProfileOutlined />,
+    },
+    {
+      label: "Contact",
+      key: "/contact",
+      icon: <CommentOutlined />,
     },
   ]
 
@@ -99,12 +99,13 @@ export default function Sidebar() {
             )}
           </Button>
           {collapsed ? (
-            <h1 className="logo">H{/* <a href="#about-me">H</a> */}</h1>
+            <Link to="#about-me">
+              <h1 className="logo">H</h1>
+            </Link>
           ) : (
-            <h1 className="logo">
-              Harris
-              {/* <a href="#about-me">Harris</a> */}
-            </h1>
+            <a href="#about-me">
+              <h1 className="logo">Harris</h1>
+            </a>
           )}
           <nav>
             <Menu

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 // this hook within React allows us to use various types of form validations, like email validation (ensuring an @ symbol is inputted) and requiring fields not to be left blank
 import { useForm } from "react-hook-form"
 import { Button, Form, Input } from "antd"
@@ -13,17 +13,13 @@ const contactFormLayout = {
 }
 
 const validateForm = {
-  required: "${label} is required",
+  required: `${label} is required`,
   types: {
-    email: "${label} is not a valid email",
+    email: `${label} is not a valid email`,
   },
 }
 
 export default function Contact() {
-  // const { register, errors, handleSubmit } = useForm({ mode: "onBlur" })
-  // const onSubmit = (data) => {
-  //   console.log(data)
-  // }
   const [form] = Form.useForm()
   const { TextArea } = Input
 
