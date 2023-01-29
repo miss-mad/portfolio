@@ -1,29 +1,24 @@
-/* UNIVERSAL STYLING */
+/* ------------ UNIVERSAL STYLING ------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* height: 100%; */
 }
 
-/* CSS ROOT VARIABLES */
+/* ------------ CSS ROOT VARIABLES ------------ */
 :root {
-  --iceberg: #79addcff;
-  --gold-crayola: #dcbf85ff;
-  --copper-penny: #b2675eff;
-  --dark-electric-blue: #3e5c76ff;
-  --light-blue: #c1eeffff;
-  --original-white: antiquewhite;
-  --original-blue: lightcyan;
+  --main-background: lightsteelblue;
+  --ant-design-sider: #001529;
+  --ant-design-white: #ffffff;
 }
 
-/* GENERAL ELEMENT SELECTORS */
+/* ------------ GENERAL ELEMENT SELECTORS ------------ */
 html {
   height: 100%;
 }
 
 body {
-  background-color: lightsteelblue;
+  background-color: var(--main-background);
   font-family: Verdana, Tahoma, sans-serif, sans-serif;
   margin: 0;
 }
@@ -39,20 +34,20 @@ img {
   height: auto;
 }
 
-/* LINK STYLING */
-a:link {
+/* ------------ LINK STYLING ------------ */
+
+a {
   text-decoration: none;
-  color: var(--white);
+}
+a:link {
+  /* text-decoration: none; */
+  color: var(--ant-design-white);
 }
 
 a:hover {
   text-decoration: none;
-  color: var(--blue);
-}
-
-a[href*="miss-mad."] {
-  text-decoration: none;
-  bottom: 100px;
+  color: var(--ant-design-white);
+  /* color: var(--blue); */
 }
 
 button {
@@ -60,10 +55,10 @@ button {
   /* border: 1px solid red; */
 }
 
-/* SIDEBAR STYLING */
+/* ------------ SIDEBAR STYLING ------------ */
 .side-nav {
-  background-color: #001529;
   min-height: 100vh;
+  background-color: var(--ant-design-sider);
   /* border: 1px solid red; */
 }
 
@@ -74,67 +69,73 @@ button {
 
 h1.logo {
   text-align: center;
-  color: #ffffff;
+  color: var(--ant-design-white);
   /* border: 1px solid red; */
 }
 
 /* section containers (4) */
 .container {
-  display: flex;
-  align-items: center;
-  padding: 24px;
-  flex-direction: column;
-  background-color: lightsteelblue;
-  width: 100%;
-  margin-right: 0;
-  margin-left: 0;
+  background-color: var(--main-background);
+  /* display: flex; */
+  /* padding: 24px; */
+  /* flex-direction: column; */
+  /* width: 100%; */
+  /* margin-right: 0; */
+  /* margin-left: 0; */
   /* height: 100vh; */
   /* border: 1px solid red; */
 }
 
-.container-no-flex {
+/* this class only applies to the about me section */
+.container-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 24px;
-  height: 100vh;
-  background-color: lightsteelblue;
-  width: 100%;
-  margin-right: 0;
-  margin-left: 0;
+  background-color: var(--main-background);
   /* border: 1px solid red; */
 }
 
-/* PORTFOLIO STYLING */
+.container-no-flex {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: var(--main-background);
+  /* border: 1px solid red; */
+}
+
+/* ------------ PORTFOLIO STYLING ------------ */
 .projects {
   display: flex;
-  justify-content: center;
-  height: 100%;
-  overflow: hidden;
-  /* border: 1px solid red; */
-}
-
-.project0,
-.project1,
-.project2,
-.project3,
-.project4,
-.project5 {
-  color: white;
-  font-size: 20px;
-  text-align: center;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 16px;
+  height: 230px;
+  border-radius: 8px;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
+  color: var(--ant-design-white);
+  transition: all ease-in-out 0.2s;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
   /* border: 1px solid red; */
 }
 
-/* RESUME STYLING */
+.projects:hover {
+  filter: brightness(75%);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.75);
+}
+
+.project-info-wrapper {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* ------------ RESUME STYLING ------------ */
 .resume-headers {
   text-align: center;
 }
-
-/* .card-widths {
-  width: 80%;
-} */
