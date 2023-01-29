@@ -1,9 +1,14 @@
 import React, { useState } from "react"
 import resume from "../assets/Harris_Resume.pdf"
-import { Card, Col, List, Row } from "antd"
+import { Card, Col, Collapse, List, Row } from "antd"
 const { Meta } = Card
+const { Panel } = Collapse
 
 export default function Resume() {
+  const onChange = (key) => {
+    console.log(key)
+  }
+
   const cardData = [
     {
       key: "a",
@@ -55,22 +60,25 @@ export default function Resume() {
     },
   ]
 
+  const text = <h4>Downloadable resume here</h4>
+
+  const link = (
+    <a
+      href={resume}
+      className="downloadResume"
+      target="_blank"
+      rel="noopener noreferrer"
+      download
+      style={{ fontSize: "32px", color: "purple" }}
+    >
+      Madeleine Harris Resume
+    </a>
+  )
+
   return (
     <section className="container-no-flex">
       <div className="resume-headers">
-        <h3>Resume</h3>
-        <a
-          href={resume}
-          className="downloadResume"
-          target="_blank"
-          rel="noopener noreferrer"
-          download
-          style={{ fontSize: "32px" }}
-        >
-          Downloadable resume here
-        </a>
-
-        <h5>List of Proficiencies</h5>
+        <h3>List of Proficiencies</h3>
       </div>
 
       {cardData.map((cardData) => {
@@ -80,6 +88,7 @@ export default function Resume() {
             title={cardData.cardTitle}
             className="my-2"
             size="small"
+            hoverable
           >
             <List
               grid={{
@@ -104,6 +113,12 @@ export default function Resume() {
           </Card>
         )
       })}
+
+      <Collapse collapsible="header" onChange={onChange}>
+        <Panel header={text} key="1">
+          <p>{link}</p>
+        </Panel>
+      </Collapse>
     </section>
   )
 }
