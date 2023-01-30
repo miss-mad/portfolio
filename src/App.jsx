@@ -24,7 +24,7 @@ export default function App() {
         <Layout>
           <Content style={{ width: "100%" }}>
             <Routes>
-              <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/" element={<AboutMe />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
