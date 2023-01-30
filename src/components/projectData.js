@@ -82,7 +82,7 @@ const projectData = [
     id: 5,
     name: "Shopaholic", // orm
     linkDeployedApp:
-      "drive.google.com/file/d/1AHNXq9GSggx14o8fe0lQl0DnKLrFwNSg/view",
+      "https://drive.google.com/file/d/1AHNXq9GSggx14o8fe0lQl0DnKLrFwNSg/view",
     linkGithubRepo: "https://github.com/miss-mad/shopaholic",
     backgroundImage: "url(" + require(`${images[5].source}`) + ")",
   },
