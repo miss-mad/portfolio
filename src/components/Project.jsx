@@ -13,7 +13,7 @@ export default function Project({
 }) {
   return (
     <section className="projects" style={{ backgroundImage: backgroundImage }}>
-      <h3>{name}</h3>
+      <h3 className="project-name">{name}</h3>
       <div className="project-info-wrapper">
         <div>
           <Popover

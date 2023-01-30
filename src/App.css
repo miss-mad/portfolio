@@ -39,15 +39,10 @@ img {
 a {
   text-decoration: none;
 }
-a:link {
-  /* text-decoration: none; */
-  color: var(--ant-design-white);
-}
-
+a:link,
 a:hover {
   text-decoration: none;
   color: var(--ant-design-white);
-  /* color: var(--blue); */
 }
 
 button {
@@ -124,18 +119,55 @@ h1.logo {
 }
 
 .projects:hover {
-  filter: brightness(75%);
+  /* filter: brightness(95%); */
+  opacity: 80%;
   box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.75);
+  /* box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1); */
+}
+
+.project-name {
+  background: linear-gradient(var(--ant-design-sider) 0 0) var(--p, 0) /
+    var(--p, 0) no-repeat;
+  transition: 0.4s;
+  padding: 10px;
+}
+
+.project-name:hover {
+  /* filter: brightness(390%); */
+  font-size: 32px;
+  transition: 0.75s;
+  transition-timing-function: ease;
+  --p: 100%;
+  /* color: #fff; */
+  border-radius: 6px;
+  padding: 8px;
+  /* border: 1px solid red; */
 }
 
 .project-info-wrapper {
   display: flex;
   font-size: 40px;
   align-items: center;
+  padding: 10px;
   /* border: 1px solid red; */
+}
+
+.project-info-wrapper:hover {
+  transition: 0.75s;
+  transition-timing-function: ease;
+  border-radius: 6px;
+  padding: 8px;
 }
 
 /* ------------ RESUME STYLING ------------ */
 .resume-headers {
   text-align: center;
+}
+
+/* ------------ CONTACT STYLING ------------ */
+.contact-form {
+  border-radius: 8px;
+  /* opacity: ; */
+  /* animation: fadeInUp 2s 2s; */
+  /* animation-fill-mode: forwards; */
 }
