@@ -10,6 +10,13 @@ This is my professional portfolio that serves as the central location for all cu
 
 ![React Portfolio screenshot 1](../miss-mad-portfolio/src/components/assets/portfolio_screenshots/react_portfolio_screenshot5.png)
 
+## Future Improvements
+
+- Add Emailjs or backend to connect contact form
+- Additional animations
+- Implement a project carousel
+- Implement a scrolling function
+
 ## License
 
 None

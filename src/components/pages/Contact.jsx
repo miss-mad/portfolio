@@ -13,9 +13,9 @@ const contactFormLayout = {
 }
 
 const validateForm = {
-  required: `${label} is required`,
+  required: "${label} is required",
   types: {
-    email: `${label} is not a valid email`,
+    email: "${label} is not valid",
   },
 }
 
@@ -23,8 +23,11 @@ export default function Contact() {
   const [form] = Form.useForm()
   const { TextArea } = Input
 
-  const onFinish = (values) => {
-    console.log(values)
+  const onFinish = (data) => {
+    console.log("Success:", data)
+  }
+  const onFinishFailed = (err) => {
+    console.log("Failed:", err)
   }
 
   return (
@@ -39,6 +42,12 @@ export default function Contact() {
           maxWidth: 600,
         }}
         validateMessages={validateForm}
+        initialValues={{
+          remember: true,
+        }}
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+        autoComplete="off"
       >
         <Form.Item
           name={["user", "name"]}

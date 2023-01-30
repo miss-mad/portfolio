@@ -7,14 +7,12 @@
 
 # testing
 /coverage
-/src/components/pages/TEST.jsx
 
 # production
 /build
 
 # misc
 src/components/assets
-src/components/pages/Portfolio-Carousel.jsx
 .DS_Store
 .env.local
 .env.development.local
