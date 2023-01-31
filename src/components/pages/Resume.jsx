@@ -60,7 +60,7 @@ export default function Resume() {
     },
   ]
 
-  const text = <h4>Download my resume here</h4>
+  const text = <h4>Download Resume</h4>
 
   const link = (
     <a

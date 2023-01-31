@@ -147,8 +147,8 @@ h1.logo {
 .project-info-wrapper {
   display: flex;
   font-size: 40px;
-  align-items: center;
   padding: 10px;
+  /* align-items: center; */
   /* border: 1px solid red; */
 }
 
@@ -157,6 +157,11 @@ h1.logo {
   transition-timing-function: ease;
   border-radius: 6px;
   padding: 8px;
+}
+
+.link {
+  display: flex;
+  padding: 3px;
 }
 
 /* ------------ RESUME STYLING ------------ */
