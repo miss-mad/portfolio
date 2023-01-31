@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c8bea910.css",
-    "main.js": "/portfolio/static/js/main.29e8f514.js",
+    "main.css": "/portfolio/static/css/main.aa24f76b.css",
+    "main.js": "/portfolio/static/js/main.d85e20af.js",
     "static/media/react_portfolio_screenshot4.png": "/portfolio/static/media/react_portfolio_screenshot4.fc500049acc424353cf2.png",
     "static/media/harris_headshot.jpg": "/portfolio/static/media/harris_headshot.72184a054a43605e7e6e.jpg",
-    "static/media/react_portfolio_screenshot5.png": "/portfolio/static/media/react_portfolio_screenshot5.4d348d4edff2050a2ad4.png",
+    "static/media/react_portfolio_screenshot5.png": "/portfolio/static/media/react_portfolio_screenshot5.62f9ef1dad59fc94b6a3.png",
     "static/media/birds_eye_for_business_unsplash.jpg": "/portfolio/static/media/birds_eye_for_business_unsplash.7c201778f46d7d47e834.jpg",
     "static/media/react_portfolio_screenshot3.png": "/portfolio/static/media/react_portfolio_screenshot3.1ca1a6fd048ca79bd6c2.png",
     "static/media/shopaholic_unsplash.jpg": "/portfolio/static/media/shopaholic_unsplash.3f01190c0980aef26b0e.jpg",
@@ -12,16 +12,16 @@
     "static/media/resumade_screenshot1.jpg": "/portfolio/static/media/resumade_screenshot1.c9e5d6f947316185dff9.jpg",
     "static/media/react_portfolio_screenshot2.png": "/portfolio/static/media/react_portfolio_screenshot2.204bc9539491e763fec4.png",
     "static/media/Harris_Resume_old.pdf": "/portfolio/static/media/Harris_Resume_old.b398574e085813ca2abe.pdf",
-    "static/media/Harris_Resume.pdf": "/portfolio/static/media/Harris_Resume.7d1b25ecaf370f4a77f2.pdf",
+    "static/media/Harris_Resume.pdf": "/portfolio/static/media/Harris_Resume.1d28ae8c3630f37162fc.pdf",
     "static/media/whos_app_screenshot1.png": "/portfolio/static/media/whos_app_screenshot1.17fcf0acafb715592bab.png",
     "static/media/react_portfolio_screenshot1.JPG": "/portfolio/static/media/react_portfolio_screenshot1.aabe24f2117584a7625b.JPG",
     "static/media/mthsy_music_final_screenshot1.png": "/portfolio/static/media/mthsy_music_final_screenshot1.993a140878d458dae45e.png",
     "index.html": "/portfolio/index.html",
-    "main.c8bea910.css.map": "/portfolio/static/css/main.c8bea910.css.map",
-    "main.29e8f514.js.map": "/portfolio/static/js/main.29e8f514.js.map"
+    "main.aa24f76b.css.map": "/portfolio/static/css/main.aa24f76b.css.map",
+    "main.d85e20af.js.map": "/portfolio/static/js/main.d85e20af.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8bea910.css",
-    "static/js/main.29e8f514.js"
+    "static/css/main.aa24f76b.css",
+    "static/js/main.d85e20af.js"
   ]
 }
