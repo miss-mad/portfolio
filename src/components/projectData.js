@@ -45,21 +45,27 @@ const projectData = [
     id: 0,
     name: "ResuMade", // group project 3
     linkDeployedApp: "https://resumade.herokuapp.com/",
-    linkGithubRepo: "https://github.com/PeytonCast/ResuMade",
+    linkGithubRepo: "https://github.com/miss-mad/ResuMade/",
+    linkAppDemo:
+      "https://drive.google.com/file/d/1wQ-5BYagqVVCEuI6iPzPxr27yX8iOoFp/view",
     backgroundImage: "url(" + require(`${images[0].source}`) + ")",
   },
   {
     id: 1,
     name: "Who's App", // group project 2
-    linkDeployedApp: "https://whooooos-app.herokuapp.com",
-    linkGithubRepo: "https://github.com/miss-mad/Whos-App",
+    linkDeployedApp: "https://whooos-app.herokuapp.com/",
+    linkGithubRepo: "https://github.com/miss-mad/whos-app/",
+    linkAppDemo:
+      "https://drive.google.com/file/d/18u4rHra0qDXu9xuqlpxFfnfvz2ouoRNG/view",
     backgroundImage: "url(" + require(`${images[1].source}`) + ")",
   },
   {
     id: 2,
     name: "MTHSY Music!", // group project 1
-    linkDeployedApp: "https://miss-mad.github.io/mthsy-music",
-    linkGithubRepo: "https://github.com/miss-mad/mthsy-music",
+    linkDeployedApp: "https://miss-mad.github.io/mthsy-music/",
+    linkGithubRepo: "https://github.com/miss-mad/mthsy-music/",
+    linkAppDemo:
+      "https://drive.google.com/file/d/1jIYPVbLibSlh-gXP5ZTiFx2miq_M2JxD/view",
     backgroundImage: "url(" + require(`${images[2].source}`) + ")",
   },
   {

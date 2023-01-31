@@ -1,6 +1,10 @@
 import React from "react"
 import { Popover } from "antd"
-import { LinkOutlined, GithubOutlined } from "@ant-design/icons"
+import {
+  LinkOutlined,
+  GithubOutlined,
+  VideoCameraOutlined,
+} from "@ant-design/icons"
 
 export default function Project({
   key,
@@ -9,6 +13,7 @@ export default function Project({
   className,
   linkGithubRepo,
   linkDeployedApp,
+  linkAppDemo,
   backgroundImage,
 }) {
   return (
@@ -21,7 +26,12 @@ export default function Project({
             trigger="hover"
             placement="bottom"
           >
-            <a href={linkDeployedApp} target="_blank" rel="noopener noreferrer">
+            <a
+              href={linkDeployedApp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
               <LinkOutlined key="deployed" />
             </a>
           </Popover>
@@ -29,11 +39,31 @@ export default function Project({
 
         <div>
           <Popover content="Github Repo" trigger="hover" placement="bottom">
-            <a href={linkGithubRepo} target="_blank" rel="noopener noreferrer">
+            <a
+              href={linkGithubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
               <GithubOutlined key="github" />
             </a>
           </Popover>
         </div>
+
+        {linkAppDemo && (
+          <div>
+            <Popover content="App Demo" trigger="hover" placement="bottom">
+              <a
+                href={linkAppDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                <VideoCameraOutlined key="app-demo" />
+              </a>
+            </Popover>
+          </div>
+        )}
       </div>
     </section>
   )

@@ -13,6 +13,7 @@ export default function Portfolio() {
               name={project.name}
               linkGithubRepo={project.linkGithubRepo}
               linkDeployedApp={project.linkDeployedApp}
+              linkAppDemo={project.linkAppDemo}
               backgroundImage={project.backgroundImage}
             />
           )
