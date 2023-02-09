@@ -33,8 +33,17 @@ export default function Contact() {
   return (
     <section className="container-no-flex">
       <h3>Get in touch:</h3>
+      <h5>
+        A functioning contact form is coming soon! In the meantime, email is the
+        best way to reach me:
+      </h5>
+      <h5>mmlh.harris@gmail.com</h5>
+    </section>
+  )
+}
 
-      <Form
+{
+  /* <Form
         form={form}
         {...contactFormLayout}
         name="nest-messages"
@@ -107,7 +116,5 @@ export default function Contact() {
             Clear
           </Button>
         </Form.Item>
-      </Form>
-    </section>
-  )
+      </Form> */
 }

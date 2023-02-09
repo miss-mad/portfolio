@@ -1,14 +1,17 @@
 // can refactor to store in a database once we learn it later on
 
 const images = [
-  { key: 0, source: "./assets/project_screenshots/resumade_screenshot1.jpg" },
+  {
+    key: 0,
+    source: "./assets/project_screenshots/resumade_screenshot2.jpg",
+  },
   {
     key: 1,
-    source: "./assets/project_screenshots/whos_app_screenshot1.png",
+    source: "./assets/project_screenshots/whos_app_screenshot2.jpg",
   },
   {
     key: 2,
-    source: "./assets/project_screenshots/mthsy_music_final_screenshot1.png",
+    source: "./assets/project_screenshots/mthsy_music_unsplash.jpg",
   },
   {
     key: 3,
