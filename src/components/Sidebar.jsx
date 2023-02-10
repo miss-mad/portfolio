@@ -13,6 +13,7 @@ import {
 import React, { useState } from "react"
 import { Affix, Button, Layout, Menu } from "antd"
 import { Link, useNavigate } from "react-router-dom"
+// import buttonMail from "./buttonMail"
 
 const { Sider } = Layout
 
@@ -45,19 +46,29 @@ export default function Sidebar() {
       key: "/resume",
       icon: <ProfileOutlined />,
     },
-    {
-      label: "Contact",
-      key: "/contact",
-      icon: <CommentOutlined />,
-    },
+    // {
+    //   label: "Contact",
+    //   key: "/contact",
+    //   icon: <CommentOutlined />,
+    // },
   ]
 
   const socialLinks = [
     {
-      label: <a href="mailto:mmlh.harris@gmail.com">Email</a>,
+      label: (
+        <a
+          href="mailto:mmlh.harris@gmail.com?subject=Hello, Madeleine!"
+          target="_blank"
+        >
+          Email
+        </a>
+      ),
       key: "email",
       icon: <MailOutlined />,
     },
+    // {
+    //   <ButtonEmail/>
+    // },
     {
       label: (
         <a
@@ -113,9 +124,12 @@ export default function Sidebar() {
               mode="inline"
               items={navBarItems}
               onClick={handleNavBarChange}
-              defaultSelectedKeys={"/about-me"}
             />
             <Menu mode="inline" items={socialLinks} />
+            {/* <buttonMail
+              label="This is a label"
+              mailto="mailto:mmlh.harris@gmail.com"
+            /> */}
           </nav>
         </div>
       </Sider>
