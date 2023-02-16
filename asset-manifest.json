@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.aa24f76b.css",
-    "main.js": "/portfolio/static/js/main.6b56430b.js",
+    "main.js": "/portfolio/static/js/main.1b60e4c0.js",
     "static/media/react_portfolio_screenshot4.png": "/portfolio/static/media/react_portfolio_screenshot4.fc500049acc424353cf2.png",
     "static/media/react_portfolio_screenshot6.png": "/portfolio/static/media/react_portfolio_screenshot6.d42ee45f1eff2f0e8c9a.png",
     "static/media/harris_headshot.jpg": "/portfolio/static/media/harris_headshot.72184a054a43605e7e6e.jpg",
@@ -17,17 +17,17 @@
     "static/media/daria-kraplak-d34DtRp1bqo-unsplash.jpg": "/portfolio/static/media/daria-kraplak-d34DtRp1bqo-unsplash.372534c1e114dddf1e8d.jpg",
     "static/media/resumade_screenshot1.jpg": "/portfolio/static/media/resumade_screenshot1.c9e5d6f947316185dff9.jpg",
     "static/media/react_portfolio_screenshot2.png": "/portfolio/static/media/react_portfolio_screenshot2.204bc9539491e763fec4.png",
-    "static/media/Harris_Resume.pdf": "/portfolio/static/media/Harris_Resume.0bc3f8ad1f7289df4f3c.pdf",
+    "static/media/Harris_Resume.pdf": "/portfolio/static/media/Harris_Resume.a062c2d4fa1c745200d9.pdf",
     "static/media/whos_app_screenshot1.png": "/portfolio/static/media/whos_app_screenshot1.17fcf0acafb715592bab.png",
     "static/media/react_portfolio_screenshot1.JPG": "/portfolio/static/media/react_portfolio_screenshot1.aabe24f2117584a7625b.JPG",
     "static/media/mthsy_music_final_screenshot1.png": "/portfolio/static/media/mthsy_music_final_screenshot1.993a140878d458dae45e.png",
     "index.html": "/portfolio/index.html",
     "static/media/buttonMail": "/portfolio/static/media/buttonMail.0e5317cbd2990f735dbb",
     "main.aa24f76b.css.map": "/portfolio/static/css/main.aa24f76b.css.map",
-    "main.6b56430b.js.map": "/portfolio/static/js/main.6b56430b.js.map"
+    "main.1b60e4c0.js.map": "/portfolio/static/js/main.1b60e4c0.js.map"
   },
   "entrypoints": [
     "static/css/main.aa24f76b.css",
-    "static/js/main.6b56430b.js"
+    "static/js/main.1b60e4c0.js"
   ]
 }
