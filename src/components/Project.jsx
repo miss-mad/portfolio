@@ -18,8 +18,11 @@ export default function Project({
 }) {
   return (
     <section className="projects" style={{ backgroundImage: backgroundImage }}>
-      <h3 className="project-name">{name}</h3>
-      <div className="project-info-wrapper">
+      <div className="project-front">
+        <h3 className="project-name">{name}</h3>
+      </div>
+      <div className="card-back">
+        Back
         <div>
           <Popover
             content="Deployed Application"
@@ -36,7 +39,6 @@ export default function Project({
             </a>
           </Popover>
         </div>
-
         <div>
           <Popover content="Github Repo" trigger="hover" placement="bottom">
             <a
@@ -49,7 +51,6 @@ export default function Project({
             </a>
           </Popover>
         </div>
-
         {linkAppDemo && (
           <div>
             <Popover content="App Demo" trigger="hover" placement="bottom">

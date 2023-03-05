@@ -112,8 +112,8 @@ h1.logo {
 /* ------------ PORTFOLIO STYLING ------------ */
 .projects {
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  /* align-items: flex-end; */
+  /* flex-direction: column; */
   justify-content: flex-end;
   margin: 16px;
   height: 230px;
@@ -121,55 +121,51 @@ h1.logo {
   background-size: cover;
   background-position: center;
   color: var(--ant-design-white);
-  transition: all ease-in-out 0.2s;
+  /* transition: all ease-in-out 0.2s; */
   box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
   /* border: 1px solid red; */
 
-  perspective: 1000px;
-  transition: transform 1000ms;
+  /* content alignment (allows cards to stack on top of each other */
+  position: relative;
+  /* when we rotate the card, we need to make sure the child elements are also correctly rotated */
+  transform-style: preserve-3d;
+  /* rotates the card smoothly */
+  transition: transform 1000ms ease-in-out;
 }
 
 .projects:hover {
-  /* filter: brightness(95%); */
-  opacity: 80%;
-  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.75);
-  /* box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1); */
   transform: rotateX(180deg);
 }
 
+/* cannot use these because they mess with the card flip */
 .project-name {
-  background: linear-gradient(var(--ant-design-sider) 0 0) var(--p, 0) /
+  /* background: linear-gradient(var(--ant-design-sider) 0 0) var(--p, 0) /
     var(--p, 0) no-repeat;
-  transition: 0.4s;
-  padding: 10px;
+  transition: 0.4s; */
+  padding: 30px 10px;
+  /* z-index: 1; */
 }
 
-.project-name:hover {
-  /* filter: brightness(390%); */
-  font-size: 32px;
-  transition: 0.75s;
-  transition-timing-function: ease;
-  --p: 100%;
-  /* color: #fff; */
-  border-radius: 6px;
-  padding: 8px;
-  /* border: 1px solid red; */
-}
-
-.project-info-wrapper {
+.project-front {
   display: flex;
   font-size: 40px;
   padding: 10px;
-  /* align-items: center; */
+  align-items: center;
   /* border: 1px solid red; */
+
+  /* content alignment (allows cards to stack on top of each other) */
+  /* position: absolute; */
+  /* ensures when we rotate a layer around the y-axis, the backside is not visible */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.project-info-wrapper:hover {
+/* .project-info-wrapper:hover {
   transition: 0.75s;
   transition-timing-function: ease;
   border-radius: 6px;
   padding: 8px;
-}
+} */
 
 .link {
   display: flex;
@@ -183,6 +179,7 @@ h1.logo {
   width: 300px;
   /*  */
   perspective: 1000px;
+  margin: 16px;
 }
 
 .card {
@@ -236,6 +233,7 @@ h1.logo {
   background-color: lightsalmon;
   /* rotate the backside of the card on y-axis by 180 degrees */
   transform: rotateX(180deg);
+  border-radius: 8px;
 }
 
 /* ------------ RESUME STYLING ------------ */
