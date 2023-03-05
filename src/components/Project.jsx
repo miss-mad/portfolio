@@ -5,15 +5,19 @@ import {
   GithubOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons"
+import projectData from "./projectData"
 
 export default function Project({
   key,
   name,
+  role,
   index,
+  summary,
   className,
+  linkAppDemo,
+  technologies,
   linkGithubRepo,
   linkDeployedApp,
-  linkAppDemo,
   backgroundImage,
 }) {
   return (
@@ -21,50 +25,56 @@ export default function Project({
       <div className="project-front">
         <h3 className="project-name">{name}</h3>
       </div>
-      <div className="card-back">
-        Back
-        <div>
-          <Popover
-            content="Deployed Application"
-            trigger="hover"
-            placement="bottom"
-          >
-            <a
-              href={linkDeployedApp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              <LinkOutlined key="deployed" />
-            </a>
-          </Popover>
+      <div className="project-back">
+        <div className="project-info">
+          <h4>{summary}</h4>
+          <h4>{role}</h4>
+          <h4>{technologies}</h4>
         </div>
-        <div>
-          <Popover content="Github Repo" trigger="hover" placement="bottom">
-            <a
-              href={linkGithubRepo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              <GithubOutlined key="github" />
-            </a>
-          </Popover>
-        </div>
-        {linkAppDemo && (
+        <div className="popovers">
           <div>
-            <Popover content="App Demo" trigger="hover" placement="bottom">
+            <Popover
+              content="Deployed Application"
+              trigger="hover"
+              placement="bottom"
+            >
               <a
-                href={linkAppDemo}
+                href={linkDeployedApp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
               >
-                <VideoCameraOutlined key="app-demo" />
+                <LinkOutlined key="deployed" />
               </a>
             </Popover>
           </div>
-        )}
+          <div>
+            <Popover content="Github Repo" trigger="hover" placement="bottom">
+              <a
+                href={linkGithubRepo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                <GithubOutlined key="github" />
+              </a>
+            </Popover>
+          </div>
+          {linkAppDemo && (
+            <div>
+              <Popover content="App Demo" trigger="hover" placement="bottom">
+                <a
+                  href={linkAppDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                >
+                  <VideoCameraOutlined key="app-demo" />
+                </a>
+              </Popover>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )

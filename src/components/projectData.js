@@ -52,6 +52,9 @@ const projectData = [
     linkAppDemo:
       "https://drive.google.com/file/d/1wQ-5BYagqVVCEuI6iPzPxr27yX8iOoFp/view",
     backgroundImage: "url(" + require(`${images[0].source}`) + ")",
+    summary: "summary",
+    role: "role",
+    technologies: "technologies",
   },
   {
     id: 1,
@@ -61,6 +64,9 @@ const projectData = [
     linkAppDemo:
       "https://drive.google.com/file/d/18u4rHra0qDXu9xuqlpxFfnfvz2ouoRNG/view",
     backgroundImage: "url(" + require(`${images[1].source}`) + ")",
+    summary: "summary",
+    role: "role",
+    technologies: "technologies",
   },
   {
     id: 2,
@@ -70,6 +76,9 @@ const projectData = [
     linkAppDemo:
       "https://drive.google.com/file/d/1jIYPVbLibSlh-gXP5ZTiFx2miq_M2JxD/view",
     backgroundImage: "url(" + require(`${images[2].source}`) + ")",
+    summary: "summary",
+    role: "role",
+    technologies: "technologies",
   },
   {
     id: 3,
@@ -78,6 +87,9 @@ const projectData = [
       "https://drive.google.com/file/d/1i9vDdDTLYLmDfU2recQM0PSODGzLyGBb/view",
     linkGithubRepo: "https://github.com/miss-mad/birds-eye-for-business",
     backgroundImage: "url(" + require(`${images[3].source}`) + ")",
+    summary: "summary",
+    role: "role",
+    technologies: "technologies",
   },
   {
     id: 4,
@@ -94,6 +106,9 @@ const projectData = [
       "https://drive.google.com/file/d/1AHNXq9GSggx14o8fe0lQl0DnKLrFwNSg/view",
     linkGithubRepo: "https://github.com/miss-mad/shopaholic",
     backgroundImage: "url(" + require(`${images[5].source}`) + ")",
+    summary: "summary",
+    role: "role",
+    technologies: "technologies",
   },
   // {
   //   id: 6,

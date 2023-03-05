@@ -112,8 +112,7 @@ h1.logo {
 /* ------------ PORTFOLIO STYLING ------------ */
 .projects {
   display: flex;
-  /* align-items: flex-end; */
-  /* flex-direction: column; */
+  align-items: flex-end;
   justify-content: flex-end;
   margin: 16px;
   height: 230px;
@@ -121,43 +120,83 @@ h1.logo {
   background-size: cover;
   background-position: center;
   color: var(--ant-design-white);
-  /* transition: all ease-in-out 0.2s; */
   box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
-  /* border: 1px solid red; */
-
-  /* content alignment (allows cards to stack on top of each other */
-  position: relative;
   /* when we rotate the card, we need to make sure the child elements are also correctly rotated */
   transform-style: preserve-3d;
   /* rotates the card smoothly */
   transition: transform 1000ms ease-in-out;
+
+  /* flex-direction: column; */
+  /* transition: all ease-in-out 0.2s; */
+  /* border: 1px solid red; */
+
+  /* content alignment (allows cards to stack on top of each other */
+  /* position: relative; */
 }
 
 .projects:hover {
   transform: rotateX(180deg);
 }
 
-/* cannot use these because they mess with the card flip */
 .project-name {
+  padding: 30px 10px;
   /* background: linear-gradient(var(--ant-design-sider) 0 0) var(--p, 0) /
     var(--p, 0) no-repeat;
   transition: 0.4s; */
-  padding: 30px 10px;
-  /* z-index: 1; */
 }
 
-.project-front {
+.project-front,
+.project-back {
   display: flex;
-  font-size: 40px;
-  padding: 10px;
-  align-items: center;
-  /* border: 1px solid red; */
-
-  /* content alignment (allows cards to stack on top of each other) */
-  /* position: absolute; */
   /* ensures when we rotate a layer around the y-axis, the backside is not visible */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.project-front {
+  padding: 10px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+  /* content alignment (allows cards to stack on top of each other) */
+  /* position: absolute; */
+  /* transform: rotateX(180deg); */
+}
+
+.project-back {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 8px;
+  justify-content: space-between;
+  background-color: var(--main-background);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  /* content alignment (allows cards to stack on top of each other) */
+  position: absolute;
+  /* rotate the backside of the card on y-axis by 180 degrees */
+  transform: rotateX(180deg);
+  /* align-items: flex-end; */
+}
+
+.project-info {
+  font-size: 60px;
+}
+
+.popovers {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 40px;
+  background-color: var(--main-background);
+}
+
+.link {
+  display: flex;
+  padding: 3px;
 }
 
 /* .project-info-wrapper:hover {
@@ -167,74 +206,38 @@ h1.logo {
   padding: 8px;
 } */
 
-.link {
-  display: flex;
-  padding: 3px;
-}
-
 /* flippable card styling */
-.flippable-card-container {
-  /* sizing */
+/* .flippable-card-container {
   height: 500px;
   width: 300px;
-  /*  */
   perspective: 1000px;
   margin: 16px;
-}
+} */
 
-.card {
-  /* sizing */
-  height: 100%;
-  width: 100%;
-  /* styling */
-  border-radius: 5px;
+/* .card { */
+/* sizing */
+/* height: 100%;
+  width: 100%; */
+/* styling */
+/* border-radius: 5px;
   border: 5px solid white;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-  /* content alignment (allows cards to stack on top of each other */
-  position: relative;
-  /* when we rotate the card, we need to make sure the child elements are also correctly rotated */
-  transform-style: preserve-3d;
-  /* rotates the card */
-  transition: transform 1000ms;
-}
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8); */
+/* content alignment (allows cards to stack on top of each other */
+/* position: relative; */
+/* when we rotate the card, we need to make sure the child elements are also correctly rotated */
+/* transform-style: preserve-3d; */
+/* rotates the card */
+/* transition: transform 1000ms; */
+/* } */
 
 /* rotates the card on hover */
-.card:hover {
+/* .card:hover {
   transform: rotateX(180deg);
-}
+} */
 
-.card-front,
-.card-back {
-  /* sizing */
-  height: 100%;
-  width: 100%;
-  /* content alignment */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* content styling */
-  /* font-family: Montserrat; */
-  font-weight: 800;
-  font-size: 60px;
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
-  /* content alignment (allows cards to stack on top of each other) */
-  position: absolute;
-  /* ensures when we rotate a layer around the y-axis, the backside is not visible */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card-front {
+/* .card-front {
   background-color: lightblue;
-}
-
-.card-back {
-  background-color: lightsalmon;
-  /* rotate the backside of the card on y-axis by 180 degrees */
-  transform: rotateX(180deg);
-  border-radius: 8px;
-}
+} */
 
 /* ------------ RESUME STYLING ------------ */
 .resume-headers {

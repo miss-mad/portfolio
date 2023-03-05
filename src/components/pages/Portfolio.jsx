@@ -1,5 +1,4 @@
 import React from "react"
-import Card from "../Card"
 import Project from "../Project"
 import projectData from "../projectData"
 
@@ -33,18 +32,16 @@ export default function Portfolio() {
             <Project
               key={project.id}
               name={project.name}
+              role={project.role}
+              summary={project.summary}
+              linkAppDemo={project.linkAppDemo}
+              technologies={project.technologies}
               linkGithubRepo={project.linkGithubRepo}
               linkDeployedApp={project.linkDeployedApp}
-              linkAppDemo={project.linkAppDemo}
               backgroundImage={project.backgroundImage}
             />
           )
         })}
-      </div>
-
-      <div className="flippable-card-container">
-        <p>hello</p>
-        <Card />
       </div>
     </div>
   )
