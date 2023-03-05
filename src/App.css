@@ -1,3 +1,6 @@
+/* ------------ FONTS ------------ */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
 /* ------------ UNIVERSAL STYLING ------------ */
 * {
   margin: 0;
@@ -66,7 +69,8 @@ button {
 }
 
 .sider-button {
-  display: block;
+  display: flex;
+  align-items: center;
   /* border: 1px solid red; */
 }
 
@@ -169,7 +173,6 @@ h1.logo {
   height: 100%;
   padding: 16px;
   color: white;
-  font-size: 30px;
   font-weight: 800;
   border-radius: 8px;
   justify-content: space-between;
@@ -179,11 +182,19 @@ h1.logo {
   position: absolute;
   /* rotate the backside of the card on y-axis by 180 degrees */
   transform: rotateX(180deg);
+
+  /* font-size: 30px; */
   /* align-items: flex-end; */
 }
 
 .project-info {
   font-size: 60px;
+}
+
+.type {
+  /* font-style: italic;
+  font-weight: 600; */
+  font-family: "Kaushan Script", cursive;
 }
 
 .popovers {

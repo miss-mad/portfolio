@@ -11,6 +11,7 @@ export default function Project({
   key,
   name,
   role,
+  type,
   index,
   summary,
   className,
@@ -28,8 +29,9 @@ export default function Project({
       <div className="project-back">
         <div className="project-info">
           <h4>{summary}</h4>
-          <h4>{role}</h4>
+          {role && <h4>{role}</h4>}
           <h4>{technologies}</h4>
+          <h4 className="type">{type}</h4>
         </div>
         <div className="popovers">
           <div>

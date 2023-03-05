@@ -33,6 +33,7 @@ export default function Portfolio() {
               key={project.id}
               name={project.name}
               role={project.role}
+              type={project.type}
               summary={project.summary}
               linkAppDemo={project.linkAppDemo}
               technologies={project.technologies}

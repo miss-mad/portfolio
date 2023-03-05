@@ -52,9 +52,11 @@ const projectData = [
     linkAppDemo:
       "https://drive.google.com/file/d/1wQ-5BYagqVVCEuI6iPzPxr27yX8iOoFp/view",
     backgroundImage: "url(" + require(`${images[0].source}`) + ")",
-    summary: "summary",
-    role: "role",
-    technologies: "technologies",
+    summary: "Easily create professional resumes with ResuMade",
+    role: "My Role: React Form + Ant Design",
+    technologies:
+      "Tools: React, Stripe, JavaScript, Express, Apollo, GraphQL, MongoDB, jsonwebtoken",
+    type: "Collaborative",
   },
   {
     id: 1,
@@ -64,9 +66,12 @@ const projectData = [
     linkAppDemo:
       "https://drive.google.com/file/d/18u4rHra0qDXu9xuqlpxFfnfvz2ouoRNG/view",
     backgroundImage: "url(" + require(`${images[1].source}`) + ")",
-    summary: "summary",
-    role: "role",
-    technologies: "technologies",
+    summary:
+      "The newest anonymous messaging app is here! Who is it you’ll be talking to?",
+    role: "My Role: Project Manager + Socket.io",
+    technologies:
+      "Tools: Socket.io, JavaScript, Node, Express, Sequelize, MySQL, Handlebars, Bootstrap",
+    type: "Collaborative",
   },
   {
     id: 2,
@@ -76,9 +81,11 @@ const projectData = [
     linkAppDemo:
       "https://drive.google.com/file/d/1jIYPVbLibSlh-gXP5ZTiFx2miq_M2JxD/view",
     backgroundImage: "url(" + require(`${images[2].source}`) + ")",
-    summary: "summary",
-    role: "role",
-    technologies: "technologies",
+    summary: "A one-stop shop for an artist's music and upcoming events",
+    role: "My Role: lastFM API + Local Storage",
+    technologies:
+      "Tools: JavaScript, HTML, Materialize CSS, APIs: lastFM, YouTube, TicketMaster",
+    type: "Collaborative",
   },
   {
     id: 3,
@@ -87,9 +94,11 @@ const projectData = [
       "https://drive.google.com/file/d/1i9vDdDTLYLmDfU2recQM0PSODGzLyGBb/view",
     linkGithubRepo: "https://github.com/miss-mad/birds-eye-for-business",
     backgroundImage: "url(" + require(`${images[3].source}`) + ")",
-    summary: "summary",
-    role: "role",
-    technologies: "technologies",
+    summary:
+      "Easily manage your workplace team with this handy bird's eye built for businesses",
+    role: "",
+    technologies: "Tools: JavaScript, Inquirer, MySQL2, Node",
+    type: "Back-end",
   },
   {
     id: 4,
@@ -98,6 +107,11 @@ const projectData = [
       "https://drive.google.com/file/d/1UB6qB8Fz7ZMcLKRw_VjJcDwgSqVeXZAs/view",
     linkGithubRepo: "https://github.com/miss-mad/shoot-the-breeze",
     backgroundImage: "url(" + require(`${images[4].source}`) + ")",
+    summary: "A Social Network API",
+    role: "",
+    technologies:
+      "Tools: JavaScript, Node, Express, MongoDB, NoSQL, Mongoose, Postman",
+    type: "Back-end",
   },
   {
     id: 5,
@@ -106,9 +120,11 @@ const projectData = [
       "https://drive.google.com/file/d/1AHNXq9GSggx14o8fe0lQl0DnKLrFwNSg/view",
     linkGithubRepo: "https://github.com/miss-mad/shopaholic",
     backgroundImage: "url(" + require(`${images[5].source}`) + ")",
-    summary: "summary",
-    role: "role",
-    technologies: "technologies",
+    summary: "A quick and easy inventory manager",
+    role: "",
+    technologies:
+      "Tools: JavaScript, Express, Sequelize, Postman, MySQL Workbench",
+    type: "Back-end",
   },
   // {
   //   id: 6,
