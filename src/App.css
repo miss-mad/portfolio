@@ -200,7 +200,7 @@ h1.logo {
 .project-back:hover {
   /* opacity: 1.75; */
   transition: 0.75s;
-  transition-timing-function: ease;
+  transition-timing-function: ease-in-out;
   /* border-radius: 6px; */
   padding: 8px 8px;
 }

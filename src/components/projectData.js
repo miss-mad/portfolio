@@ -56,7 +56,7 @@ const projectData = [
     role: "My Role: React Form + Ant Design",
     technologies:
       "Tools: React, Stripe, JavaScript, Express, Apollo, GraphQL, MongoDB, jsonwebtoken",
-    type: "Collaborative",
+    type: "A collaborative full stack app",
   },
   {
     id: 1,
@@ -71,7 +71,7 @@ const projectData = [
     role: "My Role: Project Manager + Socket.io",
     technologies:
       "Tools: Socket.io, JavaScript, Node, Express, Sequelize, MySQL, Handlebars",
-    type: "Collaborative",
+    type: "A collaborative full stack app",
   },
   {
     id: 2,
@@ -85,7 +85,7 @@ const projectData = [
     role: "My Role: lastFM API + Local Storage",
     technologies:
       "Tools: JavaScript, HTML, Materialize CSS, APIs: lastFM, YouTube, TicketMaster",
-    type: "Collaborative",
+    type: "A collaborative full stack app",
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ const projectData = [
       "Easily manage your workplace team with this handy bird's eye built for businesses",
     role: "",
     technologies: "Tools: JavaScript, Inquirer, MySQL2, Node",
-    type: "Back-end",
+    type: "A back-end app",
   },
   {
     id: 4,
@@ -111,7 +111,7 @@ const projectData = [
     role: "",
     technologies:
       "Tools: JavaScript, Node, Express, MongoDB, NoSQL, Mongoose, Postman",
-    type: "Back-end",
+    type: "A back-end app",
   },
   {
     id: 5,
@@ -124,7 +124,7 @@ const projectData = [
     role: "",
     technologies:
       "Tools: JavaScript, Express, Sequelize, Postman, MySQL Workbench",
-    type: "Back-end",
+    type: "A back-end app",
   },
   // {
   //   id: 6,
