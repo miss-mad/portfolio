@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.aa24f76b.css",
-    "main.js": "/portfolio/static/js/main.1b60e4c0.js",
+    "main.css": "/portfolio/static/css/main.69909622.css",
+    "main.js": "/portfolio/static/js/main.a1c96bba.js",
     "static/media/react_portfolio_screenshot4.png": "/portfolio/static/media/react_portfolio_screenshot4.fc500049acc424353cf2.png",
     "static/media/react_portfolio_screenshot6.png": "/portfolio/static/media/react_portfolio_screenshot6.d42ee45f1eff2f0e8c9a.png",
     "static/media/harris_headshot.jpg": "/portfolio/static/media/harris_headshot.72184a054a43605e7e6e.jpg",
@@ -23,11 +23,11 @@
     "static/media/mthsy_music_final_screenshot1.png": "/portfolio/static/media/mthsy_music_final_screenshot1.993a140878d458dae45e.png",
     "index.html": "/portfolio/index.html",
     "static/media/buttonMail": "/portfolio/static/media/buttonMail.0e5317cbd2990f735dbb",
-    "main.aa24f76b.css.map": "/portfolio/static/css/main.aa24f76b.css.map",
-    "main.1b60e4c0.js.map": "/portfolio/static/js/main.1b60e4c0.js.map"
+    "main.69909622.css.map": "/portfolio/static/css/main.69909622.css.map",
+    "main.a1c96bba.js.map": "/portfolio/static/js/main.a1c96bba.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa24f76b.css",
-    "static/js/main.1b60e4c0.js"
+    "static/css/main.69909622.css",
+    "static/js/main.a1c96bba.js"
   ]
 }
