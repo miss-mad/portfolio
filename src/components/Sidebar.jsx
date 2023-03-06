@@ -10,6 +10,9 @@ import {
   MenuUnfoldOutlined,
 } from "@ant-design/icons"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
+
 import React, { useState } from "react"
 import { Affix, Button, Layout, Menu } from "antd"
 import { Link, useNavigate } from "react-router-dom"
@@ -31,7 +34,7 @@ export default function Sidebar() {
 
   const navBarItems = [
     {
-      label: "AboutMe",
+      label: "About Me",
       key: "/about-me",
       icon: <CoffeeOutlined />,
       danger: true,
@@ -39,7 +42,8 @@ export default function Sidebar() {
     {
       label: "Portfolio",
       key: "/portfolio",
-      icon: <FolderOpenOutlined />,
+      // icon: <FolderOpenOutlined />,
+      icon: <FontAwesomeIcon icon={faBriefcase} />,
     },
     {
       label: "Resume",
@@ -50,6 +54,11 @@ export default function Sidebar() {
     //   label: "Contact",
     //   key: "/contact",
     //   icon: <CommentOutlined />,
+    // },
+    // {
+    //   label: "Blog",
+    //   key: "/blog",
+    //   icon: < />,
     // },
   ]
 
