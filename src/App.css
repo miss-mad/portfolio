@@ -1,7 +1,7 @@
 /* ------------ FONTS ------------ */
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Marck+Script&family=Merienda+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 
 /* ------------ UNIVERSAL STYLING ------------ */
 * {
@@ -12,9 +12,9 @@
 
 /* ------------ CSS ROOT VARIABLES ------------ */
 :root {
-  --main-background: lightsteelblue;
   --ant-design-sider: #001529;
   --ant-design-white: #ffffff;
+  --main-background: lightsteelblue;
 }
 
 .App {
@@ -180,6 +180,8 @@ h1.logo {
   color: white;
   font-weight: 800;
   border-radius: 8px;
+  background-size: cover;
+  background-position: center;
   justify-content: space-between;
   background-color: var(--main-background);
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -190,15 +192,26 @@ h1.logo {
 
   /* font-size: 30px; */
   /* align-items: flex-end; */
+  /* background-color: green; */
+  /* background-image: "./assets/project_screenshots/resumade_screenshot2.jpg"; */
+  /* background-image: "./components/assets/project_screenshotsresumade_screenshot2.jpg"; */
+}
+
+.project-back:hover {
+  /* opacity: 1.75; */
+  transition: 0.75s;
+  transition-timing-function: ease;
+  /* border-radius: 6px; */
+  padding: 8px 8px;
 }
 
 .project-info {
   font-size: 60px;
+  color: var(--ant-design-white);
+  /* border: 1px solid red; */
 }
 
 .type {
-  /* font-style: italic;
-  font-weight: 600; */
   font-family: "Kaushan Script", cursive;
 }
 
@@ -207,20 +220,14 @@ h1.logo {
   align-items: flex-end;
   padding: 10px;
   font-size: 40px;
-  background-color: var(--main-background);
+  /* border: 1px solid red; */
+  /* background-color: var(--main-background); */
 }
 
 .link {
   display: flex;
   padding: 3px;
 }
-
-/* .project-info-wrapper:hover {
-  transition: 0.75s;
-  transition-timing-function: ease;
-  border-radius: 6px;
-  padding: 8px;
-} */
 
 /* flippable card styling */
 /* .flippable-card-container {

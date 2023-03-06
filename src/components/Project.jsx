@@ -26,7 +26,10 @@ export default function Project({
       <div className="project-front">
         <h3 className="project-name">{name}</h3>
       </div>
-      <div className="project-back">
+      <div
+        className="project-back"
+        style={{ backgroundImage: backgroundImage }}
+      >
         <div className="project-info">
           <h4>{summary}</h4>
           {role && <h4>{role}</h4>}

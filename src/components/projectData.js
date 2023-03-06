@@ -70,7 +70,7 @@ const projectData = [
       "The newest anonymous messaging app is here! Who is it you’ll be talking to?",
     role: "My Role: Project Manager + Socket.io",
     technologies:
-      "Tools: Socket.io, JavaScript, Node, Express, Sequelize, MySQL, Handlebars, Bootstrap",
+      "Tools: Socket.io, JavaScript, Node, Express, Sequelize, MySQL, Handlebars",
     type: "Collaborative",
   },
   {
