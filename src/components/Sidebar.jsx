@@ -9,13 +9,13 @@ import {
   FolderOpenOutlined,
   MenuUnfoldOutlined,
 } from "@ant-design/icons"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
 
 import React, { useState } from "react"
 import { Affix, Button, Layout, Menu } from "antd"
 import { Link, useNavigate } from "react-router-dom"
+// import { useMediaQuery } from "react-responsive"
 // import buttonMail from "./buttonMail"
 
 const { Sider } = Layout
@@ -23,6 +23,7 @@ const { Sider } = Layout
 export default function Sidebar() {
   const navigate = useNavigate()
   const [collapsed, setCollapsed] = useState(false)
+  // const [mode, setMode] = useState("vertical")
 
   const handleNavBarChange = ({ key }) => {
     navigate(key)
@@ -31,6 +32,10 @@ export default function Sidebar() {
   const onButtonClick = () => {
     setCollapsed(!collapsed)
   }
+
+  // const handleMode = (value) => {
+  //   setMode(value ? "horizontal" : "vertical")
+  // }
 
   const navBarItems = [
     {
@@ -108,7 +113,16 @@ export default function Sidebar() {
 
   return (
     <Affix>
-      <Sider trigger={null} collapsible collapsed={collapsed} className="sider">
+      <Sider
+        breakpoint="md"
+        onBreakpoint={(broken) => {
+          broken ? setCollapsed(true) : setCollapsed(false)
+        }}
+        trigger={null}
+        collapsible
+        collapsed={collapsed}
+        className="sider"
+      >
         <div className="side-nav">
           <Button className="sider-button" onClick={onButtonClick}>
             {React.createElement(
@@ -127,6 +141,7 @@ export default function Sidebar() {
               <h1 className="logo">Harris</h1>
             </a>
           )}
+
           <nav>
             <Menu
               theme="dark"
