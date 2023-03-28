@@ -1,33 +1,18 @@
-import React from "react"
+// import Card from "../Card"
+// import { Col, Row } from "antd"
 import Project from "../Project"
+import React, { useState } from "react"
 import projectData from "../projectData"
+// import { useMediaQuery } from "react-responsive"
+// import { CSSTransition } from "react-transition-group"
 
 export default function Portfolio() {
-  // const cards = [
-  //   {
-  //     id: "1",
-  //     variant: "hover",
-  //     front: "Hover",
-  //     back: "Back1",
-  //   },
-  //   {
-  //     id: "2",
-  //     variant: "click",
-  //     front: "Click",
-  //     back: "Back",
-  //   },
-  //   {
-  //     id: "3",
-  //     variant: "focus",
-  //     front: "Focus",
-  //     back: "Back",
-  //   },
-  // ]
+  // const [showFront, setShowFront] = useState(true)
 
   return (
     <div className="container-no-flex">
       <div className="container">
-        {projectData.map((project, index) => {
+        {projectData.map((project) => {
           return (
             <Project
               key={project.id}
