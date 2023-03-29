@@ -148,6 +148,7 @@ export default function Sidebar() {
               mode="inline"
               items={navBarItems}
               onClick={handleNavBarChange}
+              style={{ fontFamily: "Public Sans" }}
             />
             <Menu mode="inline" items={socialLinks} />
             {/* <buttonMail

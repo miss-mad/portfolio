@@ -60,7 +60,7 @@ export default function Resume() {
     },
   ]
 
-  const text = <h4>Download Resume</h4>
+  const text = <h4 className="title">Download Resume</h4>
 
   const link = (
     <a
@@ -69,7 +69,7 @@ export default function Resume() {
       target="_blank"
       rel="noopener noreferrer"
       download
-      style={{ fontSize: 24, color: "#001529" }}
+      style={{ fontSize: 24, color: "#001529", fontFamily: "Alkatra" }}
     >
       Madeleine Harris Resume
     </a>
@@ -78,7 +78,7 @@ export default function Resume() {
   return (
     <section className="container-no-flex">
       <div className="resume-headers">
-        <h3>Technical Skills</h3>
+        <h3 className="title">Technical Skills</h3>
       </div>
 
       {cardData.map((cardData) => {
@@ -105,7 +105,11 @@ export default function Resume() {
               renderItem={(listData) => {
                 return (
                   <List.Item>
-                    <Meta key={listData.key} description={listData.name} />
+                    <Meta
+                      key={listData.key}
+                      description={listData.name}
+                      style={{ fontFamily: "Public Sans" }}
+                    />
                   </List.Item>
                 )
               }}

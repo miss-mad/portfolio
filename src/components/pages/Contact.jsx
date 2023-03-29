@@ -32,7 +32,7 @@ export default function Contact() {
 
   return (
     <section className="container-no-flex">
-      <h3>Get in touch:</h3>
+      <h3 className="title">Get in touch:</h3>
 
       <Form
         form={form}

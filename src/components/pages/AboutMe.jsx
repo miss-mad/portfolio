@@ -5,8 +5,8 @@ export default function AboutMe() {
   return (
     <section className="container-no-flex" id="about-me">
       <div className="container-flex">
-        <h3>About Me</h3>
-        <p>
+        <h3 className="title">About Me</h3>
+        <p className="about-me-info">
           Hello! My name is Madeleine Harris. I am a self-motivated full stack
           web developer with a unique and varied background in healthcare,
           retail, event coordination, property management, accounting, and the
