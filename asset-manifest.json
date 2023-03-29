@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e9e85a77.css",
-    "main.js": "/portfolio/static/js/main.a71ccd3f.js",
+    "main.css": "/portfolio/static/css/main.643def8d.css",
+    "main.js": "/portfolio/static/js/main.4db3f794.js",
     "static/media/react_portfolio_screenshot4.png": "/portfolio/static/media/react_portfolio_screenshot4.fc500049acc424353cf2.png",
     "static/media/react_portfolio_screenshot6.png": "/portfolio/static/media/react_portfolio_screenshot6.d42ee45f1eff2f0e8c9a.png",
     "static/media/harris_headshot.jpg": "/portfolio/static/media/harris_headshot.72184a054a43605e7e6e.jpg",
@@ -23,11 +23,11 @@
     "static/media/mthsy_music_final_screenshot1.png": "/portfolio/static/media/mthsy_music_final_screenshot1.993a140878d458dae45e.png",
     "index.html": "/portfolio/index.html",
     "static/media/buttonMail": "/portfolio/static/media/buttonMail.0e5317cbd2990f735dbb",
-    "main.e9e85a77.css.map": "/portfolio/static/css/main.e9e85a77.css.map",
-    "main.a71ccd3f.js.map": "/portfolio/static/js/main.a71ccd3f.js.map"
+    "main.643def8d.css.map": "/portfolio/static/css/main.643def8d.css.map",
+    "main.4db3f794.js.map": "/portfolio/static/js/main.4db3f794.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9e85a77.css",
-    "static/js/main.a71ccd3f.js"
+    "static/css/main.643def8d.css",
+    "static/js/main.4db3f794.js"
   ]
 }
