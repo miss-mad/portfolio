@@ -12,10 +12,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
 
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Affix, Button, Layout, Menu } from "antd"
 import { Link, useNavigate } from "react-router-dom"
-// import { useMediaQuery } from "react-responsive"
+import { useMediaQuery } from "react-responsive"
 // import buttonMail from "./buttonMail"
 
 const { Sider } = Layout
@@ -23,7 +23,7 @@ const { Sider } = Layout
 export default function Sidebar() {
   const navigate = useNavigate()
   const [collapsed, setCollapsed] = useState(false)
-  // const [mode, setMode] = useState("vertical")
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 433px)" })
 
   const handleNavBarChange = ({ key }) => {
     navigate(key)
@@ -111,6 +111,7 @@ export default function Sidebar() {
     },
   ]
 
+  console.log("WIDTH: ", isTabletOrMobile)
   return (
     <Affix>
       <Sider
@@ -122,6 +123,7 @@ export default function Sidebar() {
         collapsible
         collapsed={collapsed}
         className="sider"
+        width={isTabletOrMobile ? 150 : undefined}
       >
         <div className="side-nav">
           <Button className="sider-button" onClick={onButtonClick}>

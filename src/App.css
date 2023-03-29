@@ -161,9 +161,9 @@ h1.logo {
 }
 
 .projects-mobile {
-  display: flex;
+  /* display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   margin: 32px 0px 32px 0px;
   min-height: 275px;
   border-radius: 8px;
@@ -175,7 +175,8 @@ h1.logo {
 
 .project-name {
   font-family: "Alkatra", Verdana, Geneva, Tahoma, sans-serif;
-  /* padding: 30px 10px; */
+  padding-top: 8px;
+  width: min-content;
   /* background: linear-gradient(var(--ant-design-sider) 0 0) var(--p, 0) /
     var(--p, 0) no-repeat;
   transition: 0.4s; */
@@ -259,7 +260,7 @@ h1.logo {
   display: flex;
   flex-direction: column-reverse;
   width: 100px;
-  /* padding: 10px; */
+  padding-bottom: 8px;
   /* font-size: 40px; */
   /* align-items: flex-end; */
 
@@ -362,8 +363,8 @@ h1.logo {
   sider.;
 } */
 
-@media screen and (max-width: 605px) {
+/* @media screen and (max-width: 605px) {
   .mobile {
     font-size: 8px;
   }
-}
+} */
