@@ -55,7 +55,7 @@ const projectData = [
     summary: "Easily create professional resumes with ResuMade",
     role: "My Role: React Form + Ant Design",
     technologies:
-      "Tools: React, Stripe, JavaScript, Express, Apollo, GraphQL, MongoDB, jsonwebtoken",
+      "Tools: React, Stripe, JavaScript, Node, Express, Apollo, GraphQL, MongoDB, jsonwebtoken",
     type: "A collaborative full stack app",
   },
   {

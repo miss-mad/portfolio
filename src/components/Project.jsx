@@ -33,21 +33,16 @@ export default function Project({
   // console.log(font_size)
 
   return (
-    <div
-      className="projects"
-      style={{
-        backgroundImage: backgroundImage,
-      }}
-    >
-      <div className="project-front">
-        <h3 className="project-name">{name}</h3>
-      </div>
+    <div>
       <MediaQuery maxWidth={433}>
         <div
-          className="project-back"
-          style={{ backgroundImage: backgroundImage }}
+          className="projects-mobile"
+          style={{
+            backgroundImage: backgroundImage,
+          }}
         >
-          <div>
+          <div style={{ margin: "16px" }}>
+            <h3 className="project-name">{name}</h3>
             <Row className="project-info">
               <Col>
                 <Row>
@@ -138,94 +133,104 @@ export default function Project({
       </MediaQuery>
       <MediaQuery minWidth={434}>
         <div
-          className="project-back"
-          style={{ backgroundImage: backgroundImage }}
+          className="projects"
+          style={{
+            backgroundImage: backgroundImage,
+          }}
         >
-          <div>
-            <Row className="project-info">
-              <Col>
-                <Row>
-                  <Col span={24} className="info-laptop">
-                    {summary}
-                  </Col>
-                </Row>
-              </Col>
-              <Col>
-                <Row>
-                  <Col span={24} className="info-laptop">
-                    {role && <>{role}</>}
-                  </Col>
-                </Row>
-              </Col>
-              <Col>
-                <Row>
-                  <Col span={24} className="info-laptop">
-                    {technologies}
-                  </Col>
-                </Row>
-              </Col>
-              <Col>
-                <Row>
-                  <Col span={24} className="type-laptop">
-                    {type}
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-            <div className="popovers">
-              <Row>
-                <Col span={8}>
-                  <Popover
-                    content="Deployed Application"
-                    trigger="hover"
-                    placement="bottom"
-                  >
-                    <a
-                      href={linkDeployedApp}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link"
-                    >
-                      <LinkOutlined key="deployed" />
-                    </a>
-                  </Popover>
+          <div className="project-front">
+            <h3 className="project-name">{name}</h3>
+          </div>
+          <div
+            className="project-back"
+            style={{ backgroundImage: backgroundImage }}
+          >
+            <div>
+              <Row className="project-info">
+                <Col>
+                  <Row>
+                    <Col span={24} className="info-laptop">
+                      {summary}
+                    </Col>
+                  </Row>
                 </Col>
-                <Col span={8}>
-                  <Popover
-                    content="Github Repo"
-                    trigger="hover"
-                    placement="bottom"
-                  >
-                    <a
-                      href={linkGithubRepo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link"
-                    >
-                      <GithubOutlined key="github" />
-                    </a>
-                  </Popover>
+                <Col>
+                  <Row>
+                    <Col span={24} className="info-laptop">
+                      {role && <>{role}</>}
+                    </Col>
+                  </Row>
                 </Col>
-
-                {linkAppDemo && (
-                  <div>
+                <Col>
+                  <Row>
+                    <Col span={24} className="info-laptop">
+                      {technologies}
+                    </Col>
+                  </Row>
+                </Col>
+                <Col>
+                  <Row>
+                    <Col span={24} className="type-laptop">
+                      {type}
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <div className="popovers">
+                <Row>
+                  <Col span={8}>
                     <Popover
-                      content="App Demo"
+                      content="Deployed Application"
                       trigger="hover"
                       placement="bottom"
                     >
                       <a
-                        href={linkAppDemo}
+                        href={linkDeployedApp}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link"
                       >
-                        <VideoCameraOutlined key="app-demo" />
+                        <LinkOutlined key="deployed" />
                       </a>
                     </Popover>
-                  </div>
-                )}
-              </Row>
+                  </Col>
+                  <Col span={8}>
+                    <Popover
+                      content="Github Repo"
+                      trigger="hover"
+                      placement="bottom"
+                    >
+                      <a
+                        href={linkGithubRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link"
+                      >
+                        <GithubOutlined key="github" />
+                      </a>
+                    </Popover>
+                  </Col>
+
+                  {linkAppDemo && (
+                    <div>
+                      <Popover
+                        content="App Demo"
+                        trigger="hover"
+                        placement="bottom"
+                      >
+                        <a
+                          href={linkAppDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link"
+                        >
+                          <VideoCameraOutlined key="app-demo" />
+                        </a>
+                      </Popover>
+                    </div>
+                  )}
+                </Row>
+              </div>
             </div>
           </div>
         </div>
